@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicholas, Airialle" />
+    <meta name="classification" content="Rhythm Game" />
+    <meta name="description" content="Play StepMania files through web browser" />
+    <meta name="keywords"
+        content="StepMania, rhythm, game, stepfile, charts, step, play, free, download, keyboard, dancepad, music, dance, online, spongebob, sm, browser, fingers, hands, feet" />
+    <title>SM</title>
+    <link rel="stylesheet" type="text/css" title="SM" href="style.css" />
+</head>
+
+<body id="body">
+    <div><button id="optionsHidden" onclick="options()">Options</button></div>
+    <div id="options">
+        <div id="inline1"><span id="span7"><button onclick="options()">Options</button><button
+                    onclick="hideOptions()">Hide</button></span></div>
+        <div id="inline2"><span id="span8"><button onclick="controls()">Controls</button><button
+                    onclick="downScroll()">Downscroll</button></span></div>
+        <div id="inline3"><span id="span1">Scroll Rate </span><button onclick="scrollRateM()">-</button>
+            <button onclick="scrollRateP()">+</button>
+        </div>
+        <div id="inline4">
+            <span id="span2">Height</span><button onclick="heightM()">-</button>
+            <button onclick="heightP()">+</button>
+        </div>
+        <div id="inline5"><span id="span3">Width</span><button onclick="widthM()">-</button>
+            <button onclick="widthP()">+</button>
+        </div>
+        <div id="inline6"><span id="span4">Spacing</span><button onclick="spacingM()">-</button>
+            <button onclick="spacingP()">+</button>
+        </div>
+        <div id="inline7"><span id="span5">Radius</span><button onclick="radiusM()">-</button>
+            <button onclick="radiusP()">+</button>
+        </div>
+        <div id="inline11"><span id="span11">Song Offset</span><button onclick="offsetM()">-</button>
+            <button onclick="offsetP()">+</button>
+        </div>
+        <div id="inline15"><span id="span15">Judge Offset</span><button onclick="judgeOffsetM()">-</button>
+            <button onclick="judgeOffsetP()">+</button>
+        </div>
+        <div id="inline8"><span id="span6">Background</span><button onclick="backgroundM()">-</button>
+            <button onclick="backgroundP()">+</button>
+        </div>
+        <div id="inline18"><span id="span18">Background 2</span><button onclick="background2M()">-</button>
+            <button onclick="background2P()">+</button>
+        </div>
+        <div id="inline12"><span id="span12">Reverse Notes</span><button onclick="noteReverserM()">-</button>
+            <button onclick="noteReverserP()">+</button>
+        </div>
+        <div id="inline13"><span id="span13">Screen Cut</span><button onclick="screenCutM()">-</button>
+            <button onclick="screenCutP()">+</button>
+        </div>
+        <div id="inline14"><span id="span14">Note Color</span><button onclick="noteColorM()">-</button>
+            <button onclick="noteColorP()">+</button>
+        </div>
+        <div id="inline16"><span id="span16">Chart Number</span><button onclick="chartNumberM()">-</button>
+            <button onclick="chartNumberP()">+</button>
+        </div>
+        <div id="inline19"><span id="span19"><button onclick="scoress()">Scores
+                </button><button onclick="defaults()">Default
+                </button></span>
+        </div>
+        <div id="inline9"><span id="span9"><button onclick="window.location='mtp.html';">Multiplier
+                    Tiles</button></span>
+        </div>
+    </div>
+    <div id="listContainer">
+        <div id="ffr" style="text-align:center;">SM</div>
+        <div style="text-align:center;">Directions</div>
+        <ul>
+            <li>Pick or download StepMania related songs</li>
+            <li>Import song folder's contents</li>
+            <li>Check out options</li>
+        </ul>
+    </div>
+    <div id="resultsContainer" style="text-align:center;">
+        <div id="titleResults"></div>
+        <div id="ultimateResults"></div>
+        <div id="fancyResults"></div>
+        <div id="stunningResults"></div>
+        <div id="missResults"></div>
+    </div>
+    <div id="paContainer">
+        <div id="hit">Hit: </div>
+        <div id="miss">Miss: </div>
+        <div id="accuracy">Accuracy: </div>
+        <div id="results"></div>
+    </div>
+    <div id="mainDiv">
+        <div id="div"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="ddiv"></div>
+        <div id="ddiv2"></div>
+        <div id="ddiv3"></div>
+        <div id="ddiv4"></div>
+    </div>
+    <div id="accuracyContainer">
+        <div id="ultimate">0 U</div>
+        <div id="fancy">0 F</div>
+        <div id="stunning">0 S</div>
+    </div>
+    <div id="stepDebug" style="display:none;color:#d372d3">
+        <div>Debug</div>
+        <div id="step0"></div>
+        <div id="step1"></div>
+        <div id="step2"></div>
+        <div id="step3"></div>
+        <div id="step4"></div>
+        <div id="step5"></div>
+        <div id="step6"></div>
+        <div id="step7"></div>
+        <div id="step8"></div>
+        <div id="step9"></div>
+        <div id="step10"></div>
+        <div id="step11"></div>
+        <div id="step12"></div>
+        <div id="step13"></div>
+        <div id="step14"></div>
+        <div id="step15"></div>
+        <div id="step16"></div>
+        <div id="step17"></div>
+        <div id="step18"></div>
+        <div id="step19"></div>
+        <div id="step20"></div>
+        <div id="step21"></div>
+        <div id="step22"></div>
+        <div id="step23"></div>
+        <div id="step24"></div>
+    </div>
+    <div id="screenCut"></div>
+    <input type="file" id="fileInput" name="files[]" multiple accept="" />
+    <button type="button" id="uploadButton">Upload Files</button>
+    <audio id="audio" controls style="display:none">
+        <source src="" id="src" />
+    </audio>
+    <textarea id="my-text-area"></textarea>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jic/2.0.2/JIC.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <input type="file" id="upload" style="display:none;" />
+    <audio id="audio" style="display:none;" controls>
+        <source src="" id="src" />
+    </audio>
+    <button id="buttonPlay" onclick="buttonPlay()">Play</button>
+    <span id="songTitle" style="font-size: 30px; color: rgb(228, 131, 230); margin-left: 19px;"></span>
+    <span id="difficulty" style="font-size: 30px; color: rgb(228, 131, 230); margin-left: 19px;"></span>
+    <div id="imageContainer"><img id="backgroundImage" src="" /></div>
+    <div id="cdTitleContainer"><img id="cdtitleImage" src="" /></div>
+    <div id="scoreContainer">
+    </div>
+    <button id="scoresHidden" onclick=scoresHidden()>Scores</button>
+    <input type="text" id="search" />
+
+</body>
+<textarea id="smText">SM Convertor</textarea>
+<textarea id="fullArray">Step </textarea>
+<textarea id="indexCommaT">Step Rate </textarea>
+<textarea id="bpmTick">Bpm Tick </textarea>
+<textarea id="bpmRate">Bpm Rate </textarea>
+<div id="test" style="display:none;"></div>
+<div id="test2" style="display:none;></div>
+<div id=" test3" style="display:none;></div>
+<div id=" test4" style="display:none;></div>
+<div id=" test5" style="display:none;></div>
+<div id=" test6" style="display:none;></div>
+<div id=" test7" style="display:none;></div>
+<div id=" test8" style="display:none;></div>
+<div id=" test9" style="display:none;></div>
+<div id=" test10" style="display:none;></div>
+<div id=" test11" style="display:none;></div>
+<div id=" test12" style="display:none;></div>
+<div id=" test13" style="display:none;></div>
+<div id=" test14" style="display:none;></div>
+<div id=" rate">Rate Per Second</div>
+<div id="currentRate">Current Bpm Rate </div>
+<div id="tick">Tick </div>
+<div id="elapsedTime">Elapsed Time </div>
+<div id="stepRate">Current Step</div>
+<div id="bps">Max Steps Per Second</div>
+
+<script src="smReader.js"></script>
+
+</html>

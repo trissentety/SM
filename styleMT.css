@@ -1,0 +1,449 @@
+body {
+
+    font-family: cursive;
+    background: black;
+    overflow: hidden;
+}
+
+button {
+    float: right;
+    background: black;
+    color: white;
+}
+
+#allScores {
+    height: 200px;
+    width: 155px;
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    color: #974cfe;
+}
+
+#d3 {
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    height: 300px;
+    width: 700px;
+}
+
+.rect:hover {
+    opacity: 0.8;
+}
+
+#intro {
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    font-size: 25px;
+    color: #d590da;
+}
+
+#pa {
+    position: absolute;
+    top: 200px;
+    left: 214px;
+    color: #d590da;
+}
+
+#pa2 {
+    position: absolute;
+    top: 240px;
+    left: 214px;
+    color: #d590da;
+}
+
+#hRound {
+    position: absolute;
+    top: 220px;
+    left: 110px;
+    color: #d590da;
+}
+
+#hScore {
+    position: absolute;
+    top: 250px;
+    left: 143px;
+    color: #d590da;
+    font-size: 27px;
+}
+
+#gOver {
+    position: absolute;
+    top: 200px;
+    left: 191px;
+    color: #d590da;
+    font-size: 35px;
+}
+
+#h1 {
+    float: right;
+
+}
+
+#eDiv4 {
+    position: absolute;
+    width: 70px;
+    height: 28px;
+    opacity: 0.4;
+    z-index: 100;
+    background-color: black;
+    top: 300;
+    left: 400;
+    background: #005b7f #e93eff #9b59f8
+}
+
+img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+
+.div {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    /* box-shadow: 6px 6px 2px 1px rgba(148, 30, 181, 0.3); */
+    opacity: 0.4;
+    z-index: 100;
+    background-color: black;
+    top: 300;
+    overflow: hidden;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+#button1 {
+    color: black;
+}
+
+#barfade {
+    height: 23px;
+    width: 100px;
+    color: #e93eff;
+    position: absolute;
+    top: 44px;
+    right: 40px;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+    border: 1px solid #e93eff;
+    border-radius: 5px;
+}
+
+#hide {
+    height: 23px;
+    width: 100px;
+    color: #e93eff;
+    position: absolute;
+    top: 76px;
+    right: 40px;
+    display: flex;
+    visibility: hidden;
+    justify-content: space-around;
+    border: 1px solid #e93eff;
+    border-radius: 5px;
+}
+
+#linec {
+    height: 23px;
+    width: 100px;
+    color: #e93eff;
+    position: absolute;
+    top: 44px;
+    right: 150px;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+    border: 1px solid #e93eff;
+    border-radius: 5px;
+}
+
+#size {
+    height: 23px;
+    width: 100px;
+    color: #e93eff;
+    position: absolute;
+    top: 44px;
+    right: 260px;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+    border: 1px solid #e93eff;
+    border-radius: 5px;
+}
+
+#height {
+    height: 23px;
+    width: 100px;
+    color: #e93eff;
+    position: absolute;
+    top: 76px;
+    right: 260px;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+    border: 1px solid #e93eff;
+    border-radius: 5px;
+}
+
+#width {
+    height: 23px;
+    width: 100px;
+    color: #e93eff;
+    position: absolute;
+    top: 108px;
+    right: 260px;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+    border: 1px solid #e93eff;
+    border-radius: 5px;
+}
+
+#spacing {
+    height: 23px;
+    width: 100px;
+    color: #e93eff;
+    position: absolute;
+    top: 44px;
+    right: 370px;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+    border: 1px solid #e93eff;
+    border-radius: 5px;
+}
+
+#barfade2 {
+    cursor: pointer;
+}
+
+#barfade1 {
+    cursor: pointer;
+}
+
+#barfade3 {
+    cursor: pointer;
+}
+
+#linec1 {
+    cursor: pointer;
+}
+
+#linec2 {
+    cursor: pointer;
+}
+
+#linec3 {
+    cursor: pointer;
+}
+
+#spacing1 {
+    cursor: pointer;
+}
+
+#spacing2 {
+    cursor: pointer;
+}
+
+#spacing3 {
+    cursor: pointer;
+}
+
+#size1 {
+    cursor: pointer;
+}
+
+#size2 {
+    cursor: pointer;
+}
+
+#size3 {
+    cursor: pointer;
+}
+
+#height1 {
+    cursor: pointer;
+}
+
+#height2 {
+    cursor: pointer;
+}
+
+#height3 {
+    cursor: pointer;
+}
+
+#width1 {
+    cursor: pointer;
+}
+
+#width2 {
+    cursor: pointer;
+}
+
+#width3 {
+    cursor: pointer;
+}
+
+
+#fade {
+    height: 2000px;
+    width: 600px;
+    overflow: hidden;
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    z-index: 101;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+
+#line {
+    height: 3px;
+    width: 392px;
+    overflow: hidden;
+    background: #e93eff;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    z-index: 102;
+    visibility: hidden;
+}
+
+#input {
+    position: absolute;
+    height: 300px;
+    width: 90px;
+    top: 250px;
+    right: 0px;
+    color: #0e762d;
+    font-size: 11px;
+    font-family: helvetica;
+    z-index: 2;
+}
+
+#CpuInput {
+    position: absolute;
+    height: 300px;
+    width: 70px;
+    top: 250px;
+    right: 65px;
+    color: #711de6;
+    font-size: 11px;
+    font-family: helvetica;
+}
+
+#footer {
+    position: absolute;
+    color: rgb(142, 142, 142);
+    top: 95%;
+    left: 47%;
+}
+
+#mainTitle {
+    position: absolute;
+    height: 300px;
+    width: 90px;
+    top: 250px;
+    right: 0px;
+    color: #0e762d;
+    font-size: 11px;
+    font-family: helvetica;
+    z-index: 102;
+}
+
+#mainTitle2 {
+    position: absolute;
+    height: 300px;
+    width: 70px;
+    top: 250px;
+    right: 65px;
+    color: #711de6;
+    font-size: 11px;
+    font-family: helvetica;
+    z-index: 102;
+}
+
+#options {
+    height: 500;
+    width: 500;
+    background-color: rgb(20, 20, 20);
+}
+
+#rating {
+    color: #d590da;
+    position: absolute;
+    top: 500px;
+    left: 235px;
+}
+
+#scrollRate2 {
+    float: right;
+    font-size: 14px;
+}
+
+input {
+    background: black;
+    color: white;
+    float: right;
+    font-size: 11px;
+    width: 40px;
+    z-index: 102;
+}
+
+label {
+    color: white;
+}
+
+select,
+#sm {
+    float: right;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    color: black;
+    background: black;
+}
+
+#mainTitle:hover #title {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.1s ease 0.5s;
+    font-size: 20px;
+}
+
+#mainTitle2:hover #title2 {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.1s ease 0.5s;
+    font-size: 20px;
+}
+
+#title {
+    visibility: hidden;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+
+}
+
+#title2 {
+    visibility: hidden;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}

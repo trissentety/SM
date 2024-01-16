@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Multiplier Tiles</title>
+    <meta name="author" content="Nicholas, Airialle" />
+    <meta name="classification" content="Rhythm Game" />
+    <meta name="description" content="Play rhythm game Multiplier Tiles" />
+    <meta name="keywords"
+        content="tiles, multiplier, rhythm, game, step, play, free, download, keyboard, replay, online, browser, round, rating, high, score, fingers, hands, feet" />
+    <link href="styleDS.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+
+</style>
+
+<body>
+    <!-- <select id="options">
+        <option value="0">Options...</option>
+        <option value="1">Everything</option>
+        <option value="2">No Jacks</option>
+        <option value="4">Jacks and Trills OFF</option>
+        <option value="5">Trills OFF</option>
+        <option value="6">Default</option>
+        <option value="7">Mode 1</option>
+        <option value="8">Mode 2</option>
+    </select> -->
+    <div id="sm"><button id="sm" onclick="window.location='index.html';">Play SM</button> </div>
+
+    <select id="hacks">
+        <option value="0">Hacks...</option>
+        <option value="1">Everything</option>
+        <option value="2">No Jacks</option>
+        <option value="4">No Jacks Trills</option>
+        <option value="5">No Trills</option>
+        <option value="15">No Trills Rolls</option>
+        <option value="6">Default</option>
+        <option value="7">Mode 1</option>
+        <option value="8">Mode 2</option>
+        <option value="10">Downscroll</option>
+        <option value="9">Upscroll</option>
+        <option value="11">Fade</option>
+        <option value="12">Fade OFF</option>
+        <option value="13">Line</option>
+        <option value="14">Line OFF</option>
+        <option value="16">Hide Receptor</option>
+        <option value="17">Show Receptor</option>
+        <option value="18">Spacing</option>
+        <option value="19">Spacing OFF</option>
+        <option value="20">Size</option>
+        <option value="21">Size OFF</option>
+    </select>
+    <select id="distance">
+        <option value="0">Distance...</option>
+        <option value="20">Fit Window</option>
+        <option value="1">Distance 1</option>
+        <option value="2">Distance 2</option>
+        <option value="3">Distance 3</option>
+        <option value="4">Distance 4</option>
+        <option value="5">Distance 5</option>
+        <option value="6">Distance 6</option>
+        <option value="7">Distance 7</option>
+        <option value="8">Distance 8</option>
+        <option value="9">Distance 9</option>
+        <option value="10">Distance 10</option>
+        <option value="11">Distance 11</option>
+        <option value="12">Distance 12</option>
+        <option value="13">Distance 13</option>
+        <option value="14">Distance 14</option>
+        <option value="15">Distance 15</option>
+        <option value="16">Distance 16</option>
+        <option value="17">Distance 17</option>
+        <option value="18">Distance 18</option>
+        <option value="19">Distance 19</option>
+    </select>
+    <select id="color">
+        <option value="0">Color...</option>
+        <option value="19">Pink</option>
+        <option value="18">Blue</option>
+        <option value="21">Red</option>
+        <option value="22">Black</option>
+        <option value="25">White</option>
+        <option value="26">Clear</option>
+        <option value="20">Green</option>
+        <option value="1">Purple</option>
+        <option value="2">Yellow</option>
+        <option value="3">Orange</option>
+        <option value="9">Sponge Bubbles</option>
+        <option value="4">Rainbow</option>
+        <option value="5">Checkered</option>
+        <option value="6">Checkered 2</option>
+        <option value="7">Checkered 3</option>
+        <option value="8">Checkered 4</option>
+        <option value="23">BG Black</option>
+        <option value="24">BG White</option>
+    </select>
+    <!-- <input type="number" id="scrollRate" name="scrollRate" min="1" max="300" />
+    <label for="scrollRate" id="scrollRate2">Scroll Rate:</label> -->
+    <select id="speed">
+        <option value="0">Scroll Rate...</option>
+        <option value="9">Scroll Rate 0</option>
+        <option value="10">Scroll Rate 1</option>
+        <option value="11">Scroll Rate 2</option>
+        <option value="12">Scroll Rate 3</option>
+        <option value="13">Scroll Rate 4</option>
+        <option value="14">Scroll Rate 5</option>
+        <option value="15">Scroll Rate 6</option>
+        <option value="16">Scroll Rate 7</option>
+        <option value="17">Scroll Rate 8</option>
+        <option value="26">Scroll Rate 9</option>
+        <option value="27">Scroll Rate 10</option>
+        <option value="28">Scroll Rate 11</option>
+        <option value="29">Scroll Rate 12</option>
+        <option value="30">Scroll Rate 13</option>
+        <option value="31">Scroll Rate 14</option>
+        <option value="32">Scroll Rate 15</option>
+        <option value="33">Scroll Rate 16</option>
+        <option value="34">Scroll Rate 17</option>
+        <option value="35">Scroll Rate 18</option>
+        <option value="36">Scroll Rate 19</option>
+    </select>
+    <select id="shape">
+        <option value="0">Shape...</option>
+        <option value="1">Square</option>
+        <option value="2">Circle</option>
+        <option value="21">Large Circle</option>
+        <option value="20">XL Circle</option>
+        <option value="3">Mini Circle</option>
+        <option value="4">Bar</option>
+        <option value="5">Ice Cube</option>
+        <option value="6">Tablet</option>
+        <option value="7">Bird</option>
+        <option value="0">Height Width</option>
+    </select>
+    <canvas id="canvas"></canvas>
+    <div id="pa">
+        <h1 id="h1"></h1>
+    </div>
+    <div id="pa2">
+        <div>
+            <h2 id="round"></h2>
+        </div>
+    </div>
+    <div id="hRound">
+        <div>
+            <h2 id="highestRound"></h2>
+        </div>
+    </div>
+    <div id="hScore">
+        <div>
+            <h2 id="highestScore"></h2>
+        </div>
+    </div>
+    <div id="gOver">
+        <div>
+            <h2 id="gameOver"></h2>
+        </div>
+    </div>
+    <div id="intro">
+        <div>
+            <h2 id="intro2"></h2>
+        </div>
+    </div>
+    <div id="allScores">
+        <div id="topScores"></div>
+        <div id="everything"></div>
+        <div id="noJacks"></div>
+        <div id="jacksTrillsOFF"></div>
+        <div id="trillsOFF"></div>
+        <div id="rollsTrillsOFF"></div>
+    </div>
+    <div id="CpuInput">
+        <div id="cpu0"></div>
+        <div id="cpu1"></div>
+        <div id="cpu2"></div>
+        <div id="cpu3"></div>
+        <div id="cpu4"></div>
+        <div id="cpu5"></div>
+        <div id="cpu6"></div>
+        <div id="cpu7"></div>
+        <div id="cpu8"></div>
+        <div id="cpu9"></div>
+        <div id="cpu10"></div>
+        <div id="cpu11"></div>
+        <div id="cpu12"></div>
+        <div id="cpu13"></div>
+        <div id="cpu14"></div>
+        <div id="cpu15"></div>
+        <div id="cpu16"></div>
+        <div id="cpu17"></div>
+        <div id="cpu18"></div>
+        <div id="cpu19"></div>
+        <div id="cpu20"></div>
+        <div id="cpu21"></div>
+        <div id="cpu22"></div>
+        <div id="cpu23"></div>
+        <div id="cpu24"></div>
+        <div id="cpu25"></div>
+        <div id="cpu26"></div>
+        <div id="cpu27"></div>
+        <div id="cpu28"></div>
+        <div id="cpu29"></div>
+        <div id="cpu30"></div>
+        <div id="cpu31"></div>
+        <div id="cpu32"></div>
+        <div id="cpu33"></div>
+        <div id="cpu34"></div>
+        <div id="cpu35"></div>
+        <div id="cpu36"></div>
+        <div id="cpu37"></div>
+        <div id="cpu38"></div>
+        <div id="cpu39"></div>
+        <div id="cpu40"></div>
+        <div id="cpu41"></div>
+        <div id="cpu42"></div>
+        <div id="cpu43"></div>
+        <div id="cpu44"></div>
+        <div id="cpu45"></div>
+        <div id="cpu46"></div>
+        <div id="cpu47"></div>
+        <div id="cpu48"></div>
+        <div id="cpu49"></div>
+        <div id="cpu50"></div>
+        <pre id="title2">
+            <span style="color: #711de6">cpu</span>
+    </div>
+    <div id="input">
+        <div id="button0"></div>
+        <div id="button1"></div>
+        <div id="button2"></div>
+        <div id="button3"></div>
+        <div id="button4"></div>
+        <div id="button5"></div>
+        <div id="button6"></div>
+        <div id="button7"></div>
+        <div id="button8"></div>
+        <div id="button9"></div>
+        <div id="button10"></div>
+        <div id="button11"></div>
+        <div id="button12"></div>
+        <div id="button13"></div>
+        <div id="button14"></div>
+        <div id="button15"></div>
+        <div id="button16"></div>
+        <div id="button17"></div>
+        <div id="button18"></div>
+        <div id="button19"></div>
+        <div id="button20"></div>
+        <div id="button21"></div>
+        <div id="button22"></div>
+        <div id="button23"></div>
+        <div id="button24"></div>
+        <div id="button25"></div>
+        <div id="button26"></div>
+        <div id="button27"></div>
+        <div id="button28"></div>
+        <div id="button29"></div>
+        <div id="button30"></div>
+        <div id="button31"></div>
+        <div id="button32"></div>
+        <div id="button33"></div>
+        <div id="button34"></div>
+        <div id="button35"></div>
+        <div id="button36"></div>
+        <div id="button37"></div>
+        <div id="button38"></div>
+        <div id="button39"></div>
+        <div id="button40"></div>
+        <div id="button41"></div>
+        <div id="button42"></div>
+        <div id="button43"></div>
+        <div id="button44"></div>
+        <div id="button45"></div>
+        <div id="button46"></div>
+        <div id="button47"></div>
+        <div id="button48"></div>
+        <div id="button49"></div>
+        <div id="button50"></div>
+        <pre id="title">
+            <span style="color: #147135">player t | u</span>
+    </div>
+    <div id="fade">
+        <div id="fade2"></div>
+    </div>
+    <div id="barfade">
+        <div id="barfade1">Fade</div>
+        <div id="barfade2">-</div>
+        <div id="barfade3">+</div>
+    </div>
+    <div id="line">
+        <div id="line2"></div>
+    </div>
+    <div id="linec">
+        <div id="linec1">Line</div>
+        <div id="linec2">-</div>
+        <div id="linec3">+</div>
+    </div>
+    <div id="spacing">
+        <div id="spacing1">Space</div>
+        <div id="spacing2">-</div>
+        <div id="spacing3">+</div>
+    </div>
+    <div id="size">
+        <div id="size1">Size</div>
+        <div id="size2">-</div>
+        <div id="size3">+</div>
+    </div>
+    <div id="height">
+        <div id="height1">Height</div>
+        <div id="height2">-</div>
+        <div id="height3">+</div>
+    </div>
+    <div id="width">
+        <div id="width1">Width</div>
+        <div id="width2">-</div>
+        <div id="width3">+</div>
+    </div>
+    <div id="hide">
+        <div id="width1">Hide Recept</div>
+        <div id="width2"></div>
+        <div id="width3"></div>
+    </div>
+    <div id="d3"><div id="tooltip"></div></div>
+    <div id="rating"></div>
+
+
+</body id="dark">
+<script src="downscroll.js"></script>
+
+</html>

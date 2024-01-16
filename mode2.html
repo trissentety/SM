@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplier Tiles</title>
+</head>
+<style>
+    body {
+
+        font-family: cursive;
+        background: black;
+    }
+
+    #pa {
+        position: absolute;
+        top: 200px;
+        left: 214px;
+        color: #d590da;
+    }
+
+    #pa2 {
+        position: absolute;
+        top: 240px;
+        left: 214px;
+        color: #d590da;
+    }
+
+    #hRound {
+        position: absolute;
+        top: 220px;
+        left: 110px;
+        color: #d590da;
+    }
+
+    #hScore {
+        position: absolute;
+        top: 250px;
+        left: 143px;
+        color: #d590da;
+        font-size: 27px;
+    }
+
+    #gOver {
+        position: absolute;
+        top: 200px;
+        left: 190px;
+        color: #d590da;
+        font-size: 35px;
+    }
+
+    #h1 {
+        float: right;
+
+    }
+
+    #eDiv4 {
+        position: absolute;
+        width: 70px;
+        height: 28px;
+        opacity: 0.4;
+        z-index: 100;
+        background-color: black;
+        top: 300;
+        left: 400;
+        background: #980909;
+    }
+
+    img {
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+
+    .div {
+        position: absolute;
+        width: 70px;
+        height: 30px;
+        /* box-shadow: 6px 6px 2px 1px rgba(148, 30, 181, 0.3); */
+        opacity: 0.4;
+        z-index: 100;
+        background-color: black;
+        top: 300;
+
+    }
+
+    #options {
+        height: 500;
+        width: 500;
+        background-color: rgb(20, 20, 20);
+    }
+
+    select {
+        float: right;
+    }
+</style>
+
+<body>
+    <!-- <select id="options">
+        <option value="0">Options...</option>
+        <option value="1">Everything</option>
+        <option value="2">No Jacks</option>
+        <option value="4">Jacks and Trills OFF</option>
+        <option value="5">Trills OFF</option>
+        <option value="6">Default</option>
+        <option value="7">Mode 1</option>
+        <option value="8">Mode 2</option>
+    </select> -->
+    <select id="hacks">
+        <option value="0">Hacks...</option>
+        <option value="1">Everything</option>
+        <option value="2">No Jacks</option>
+        <option value="4">Jacks and Trills OFF</option>
+        <option value="5">Trills OFF</option>
+        <option value="6">Default</option>
+        <option value="7">Mode 1</option>
+        <option value="8">Mode 2</option>
+    </select>
+    <select id="distance">
+        <option value="0">Distance...</option>
+        <option value="20">Fit Window</option>
+        <option value="1">Distance 1</option>
+        <option value="2">Distance 2</option>
+        <option value="3">Distance 3</option>
+        <option value="4">Distance 4</option>
+        <option value="5">Distance 5</option>
+        <option value="6">Distance 6</option>
+        <option value="7">Distance 7</option>
+        <option value="8">Distance 8</option>
+        <option value="9">Distance 9</option>
+        <option value="10">Distance 10</option>
+        <option value="11">Distance 11</option>
+        <option value="12">Distance 12</option>
+        <option value="13">Distance 13</option>
+        <option value="14">Distance 14</option>
+        <option value="15">Distance 15</option>
+        <option value="16">Distance 16</option>
+        <option value="17">Distance 17</option>
+        <option value="18">Distance 18</option>
+        <option value="19">Distance 19</option>
+    </select>
+    <select id="color">
+        <option value="0">Color...</option>
+        <option value="19">Pink</option>
+        <option value="18">Blue</option>
+        <option value="22">Black</option>
+        <option value="25">White</option>
+        <option value="20">Green</option>
+        <option value="1">Purple</option>
+        <option value="2">Yellow</option>
+        <option value="3">Orange</option>
+        <option value="21">Red</option>
+        <option value="23">BG Black</option>
+        <option value="24">BG White</option>
+    </select>
+    <select id="speed">
+        <option value="0">Scroll Rate...</option>
+        <option value="9">Scroll Rate 0</option>
+        <option value="10">Scroll Rate 1</option>
+        <option value="11">Scroll Rate 2</option>
+        <option value="12">Scroll Rate 3</option>
+        <option value="13">Scroll Rate 4</option>
+        <option value="14">Scroll Rate 5</option>
+        <option value="15">Scroll Rate 6</option>
+        <option value="16">Scroll Rate 7</option>
+        <option value="17">Scroll Rate 8</option>
+        <option value="26">Scroll Rate 9</option>
+        <option value="27">Scroll Rate 10</option>
+        <option value="28">Scroll Rate 11</option>
+        <option value="29">Scroll Rate 12</option>
+        <option value="30">Scroll Rate 13</option>
+        <option value="31">Scroll Rate 14</option>
+        <option value="32">Scroll Rate 15</option>
+        <option value="33">Scroll Rate 16</option>
+        <option value="34">Scroll Rate 17</option>
+        <option value="35">Scroll Rate 18</option>
+        <option value="36">Scroll Rate 19</option>
+    </select>
+    <select id="shape">
+        <option value="0">Shape...</option>
+        <option value="1">Square</option>
+        <option value="2">Circle</option>
+        <option value="3">Mini Circle</option>
+        <option value="4">Bar</option>
+        <option value="5">Ice Cube</option>
+        <option value="6">Tablet</option>
+        <option value="7">Bird</option>
+    </select>
+    <canvas id="canvas"></canvas>
+    <div id="pa">
+        <h1 id="h1"></h1>
+    </div>
+    <div id="pa2">
+        <div>
+            <h2 id="round"></h2>
+        </div>
+    </div>
+    <div id="hRound">
+        <div>
+            <h2 id="highestRound"></h2>
+        </div>
+    </div>
+    <div id="hScore">
+        <div>
+            <h2 id="highestScore"></h2>
+        </div>
+    </div>
+    <div id="gOver">
+        <div>
+            <h2 id="gameOver"></h2>
+        </div>
+    </div>
+
+
+</body id="dark">
+<script src="/multiplier-tiles/scripts/main2.js"></script>
+
+</html>
