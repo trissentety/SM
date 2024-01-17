@@ -1,4 +1,4 @@
-var sg = 0; 
+var sg = 0;
 var sg3 = 0;
 var firstChart = 0;
 var chartNumber = 1;
@@ -609,7 +609,7 @@ var stopTickC = 0;
 var stopStop = 0;
 var artist = "";
 var timeInterval1;
-var timeInterval2;
+var tickDuration;
 document.getElementById("uploadButton").addEventListener("click", uploadChange);
 function uploadChange() {
     upload = 1;
@@ -3137,28 +3137,28 @@ function step(timestamp) {
                 if (keyStepRate1 == 0) {
                     keyStepRate1 = 1
                     stepRateC = stepRateN
-                    timeInterval2 = timestamp - timeInterval1
-                    console.log("timeInterval2", timeInterval2)
+                    tickDuration = timestamp - timeInterval1
+                    console.log("tickDuration", tickDuration)
                     timeInterval1 = timestamp
                     differenceRound = Math.round(difference)
                     combo = 0;
                     nTime = timestamp
-                    if (timeInterval2 < 260) {
+                    if (tickDuration < 260) {
                         nTime = timestamp - 19
                     }
-                    if (timeInterval2 >= 260 && timeInterval2 < 275) {
+                    if (tickDuration >= 260 && tickDuration < 275) {
                         nTime = timestamp - 17.0
                     }
-                    if (timeInterval2 >= 275 && timeInterval2 < 400) {
+                    if (tickDuration >= 275 && tickDuration < 400) {
                         nTime = timestamp - 17.0
                     }
-                    if (timeInterval2 >= 400 && timeInterval2 < 600) {
+                    if (tickDuration >= 400 && tickDuration < 600) {
                         nTime = timestamp - 16.7
                     }
-                    if (timeInterval2 >= 600 && timeInterval2 < 1000) {
+                    if (tickDuration >= 600 && tickDuration < 1000) {
                         nTime = timestamp - 16.7
                     }
-                    if (timeInterval2 >= 1000) {
+                    if (tickDuration >= 1000) {
                         nTime = timestamp - 15
                     }
                     if (tickCheckAccT >= stopTick[stopTickC]) {
