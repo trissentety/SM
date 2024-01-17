@@ -561,7 +561,7 @@ var scCount5 = 0;
 var index5 = 0;
 var keyFifth = 0;
 var chart5 = [];
-
+var uniqueArray = [];
 var sg6 = 0;
 var array16 = [];
 var newArray6 = [];
@@ -607,7 +607,9 @@ var stopTick = [];
 var stopTime = [];
 var stopTickC = 0;
 var stopStop = 0;
-var artist = ""
+var artist = "";
+var timeInterval1;
+var timeInterval2;
 document.getElementById("uploadButton").addEventListener("click", uploadChange);
 function uploadChange() {
     upload = 1;
@@ -2086,6 +2088,7 @@ async function button() {
         }
         // console.log(fullArray)
         if (line.length == 4 && firstChart == 1) {
+            uniqueArray.push(line)
             if (line.startsWith(0) || line.startsWith(1) || line.startsWith(2) || line.startsWith(3) || line.startsWith(4) || line.startsWith(5) || line.startsWith(6) || line.startsWith(7) || line.startsWith(8) || line.startsWith(9) || line.startsWith("M")) {
                 if (key == 0) {
                     key = 1;
@@ -3019,14 +3022,16 @@ async function button() {
     function onlyUnique(value, index, array) {
         return array.indexOf(value) === index;
     }
-    var unique = fullArray.filter(onlyUnique);
-    // console.log(unique);
-    // console.log(commaIndex, "commaIndex");
-    // console.log("fullArray", fullArray)
-    // console.log("commaIndexT", commaIndexT)
+    var unique = uniqueArray.filter(onlyUnique);
+    // tickRPS(unique)
+
+    // tickRPS(unique);
+    // tickRPS(commaIndex, "commaIndex");
+    // tickRPS("fullArray", fullArray)
+    // tickRPS("commaIndexT", commaIndexT)
     document.getElementById("fullArray").innerHTML = "Step " + fullArray
     document.getElementById("indexCommaT").innerHTML = "Beats Per Measure " + commaIndexT
-    // console.log(rawBpmArray)
+    // tickRPS(rawBpmArray)
     rawBpmArrayS = rawBpmArray.toString()
     const regexp = /([0-9]+).([0-9]+)/g;
     const regexp2 = /([0-9]*).([0-9]*)=([0-9]*).*([0-9]*)/g;
@@ -3059,6 +3064,8 @@ async function button() {
     document.getElementById("bpmTick").innerHTML = "Bpm Tick " + bpmTick
     document.getElementById("bpmRate").innerHTML = "Bpm Rate " + bpmRate
     bpmRate[bpmRate.length - 1] = bpmRate[bpmRate.length - 1].replace(";", "")
+    // console.log("bpmTick length", bpmTick.length)
+    // console.log(audio.duration)
     // document.getElementById("test").innerHTML = "foundExp " + foundExp
     // document.getElementById("test2").innerHTML = "foundExpString" + foundExpString
     // document.getElementById("test2").innerHTML = "arrayNew" + arrayNew[0] + " " + arrayNew[1]
@@ -3130,26 +3137,29 @@ function step(timestamp) {
                 if (keyStepRate1 == 0) {
                     keyStepRate1 = 1
                     stepRateC = stepRateN
+                    timeInterval2 = timestamp - timeInterval1
+                    console.log("timeInterval2", timeInterval2)
+                    timeInterval1 = timestamp
                     differenceRound = Math.round(difference)
                     combo = 0;
                     nTime = timestamp
-                    if (stepRate >= 3 && stepRate < 3.85) {
-                        nTime = timestamp - 17.32
+                    if (timeInterval2 < 260) {
+                        nTime = timestamp - 19
                     }
-                    if (stepRate >= 3.85 && stepRate < 3.89) {
-                        nTime = timestamp - 16.5
+                    if (timeInterval2 >= 260 && timeInterval2 < 275) {
+                        nTime = timestamp - 17.0
                     }
-                    if (stepRate >= 3.89 && stepRate < 3.902) {
-                        nTime = timestamp - 15.7
+                    if (timeInterval2 >= 275 && timeInterval2 < 400) {
+                        nTime = timestamp - 17.0
                     }
-                    if (stepRate >= 3.902) {
-                        nTime = timestamp - 15.975
+                    if (timeInterval2 >= 400 && timeInterval2 < 600) {
+                        nTime = timestamp - 16.7
                     }
-                    if (stepRate < 2) {
+                    if (timeInterval2 >= 600 && timeInterval2 < 1000) {
+                        nTime = timestamp - 16.7
+                    }
+                    if (timeInterval2 >= 1000) {
                         nTime = timestamp - 15
-                    }
-                    if (stepRate >= 2 && stepRate < 3) {
-                        nTime = timestamp - 15.975
                     }
                     if (tickCheckAccT >= stopTick[stopTickC]) {
                         nTime = timestamp + (stopTime[stopTickC] * 1000)
@@ -3160,7 +3170,6 @@ function step(timestamp) {
                 }
             }
             difference = (timeS - nTime + .000000000001) * 48 * stepRate / 1000
-
         }
         elapsedTime = timeS - cTime
         // differenceStepRate = difference * commaIndexValue;
@@ -23109,7 +23118,6 @@ function scoress() {
         this.document.getElementById("search").style.visibility = "hidden";
         optionsV = 1;
     }
-    console.log(scoreN)
     this.document.getElementById("scoreContainer").innerHTML = "";
 
     allScores = JSON.parse(localStorage.getItem('scores'));
