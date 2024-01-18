@@ -1,4 +1,4 @@
-var sg = 0; 
+var sg = 0;
 var sg3 = 0;
 var firstChart = 0;
 var chartNumber = 1;
@@ -2627,7 +2627,7 @@ async function button() {
                 scCount += 1;
                 if (scCount > 0) {
                     commaIndex.push(index)
-                    console.log(commaIndex)
+                    // console.log(commaIndex)
                 }
 
             }
@@ -3139,7 +3139,6 @@ function step(timestamp) {
                     keyStepRate1 = 1
                     stepRateC = stepRateN
                     tickDuration = timestamp - timeInterval1
-                    console.log("tickDuration", tickDuration)
                     timeInterval1 = timestamp
                     differenceRound = Math.round(difference)
                     combo = 0;
