@@ -12537,10 +12537,10 @@ addEventListener("keydown", function (e) {
         }
     }
     if (e.code == 'Enter') {
+        buttonPlay()
         searchScores()
         this.setTimeout(function () {
         }, 1000)
-        buttonPlay()
         //     stepRateN = 0;
         //     missCheck1 = 0;
         //     missCheck2 = 0;
