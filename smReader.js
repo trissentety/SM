@@ -1453,7 +1453,7 @@ async function buttonPlay() {
     arrayTime = []
     newArray = []
     b = 0
-    key = 1;
+    // key = 1;
     differenceRate = 0;
     differenceRateT = 0;
     cTime = timeS;
@@ -2624,11 +2624,12 @@ async function button() {
         }
         if (firstChart == 1) {
             if (line == ";") {
+                scCount += 1;
                 if (scCount > 0) {
                     commaIndex.push(index)
-                    // console.log(commaIndex)
+                    console.log(commaIndex)
                 }
-                scCount += 1;
+
             }
             index++
         }
