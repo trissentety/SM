@@ -1,4 +1,4 @@
-var sg = 0;   
+var sg = 0;
 var sg3 = 0;
 var firstChart = 0;
 var chartNumber = 1;
@@ -433,7 +433,7 @@ var spacingV3 = 360;
 var spacingV4 = 480;
 var spacingV5 = 700;
 var spacingV6 = 280;
-var spacingList = 61;
+var spacingList = 41;
 var spacingResults = 300;
 var hitBoxBottom = 600;
 var hitBoxTop = 300;
@@ -22934,7 +22934,7 @@ function defaults() {
     scrollRateA[9] = 0;
     scrollRateA[10] = 612;
     scrollRateA[11] = 280;
-    scrollRateA[12] = 61;
+    scrollRateA[12] = 41;
     scrollRateA[13] = 300;
     scrollRateA[14] = 700;
     scrollRateA[15] = 0;
