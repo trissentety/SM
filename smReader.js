@@ -3657,8 +3657,6 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (fullArray[S] == "0022") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -3722,7 +3720,7 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (fullArray[S] == "0130") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (fullArray[S] == "0131") {
                 movementAccB += 1;
@@ -3733,7 +3731,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (fullArray[S] == "0133") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (fullArray[S] == "0200") {
                 movementAccB += 1;
@@ -3901,7 +3899,6 @@ function step(timestamp) {
             }
             if (fullArray[S] == "1033") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (fullArray[S] == "1100") {
                 movementAccA += 1;
@@ -4065,7 +4062,6 @@ function step(timestamp) {
             }
             if (fullArray[S] == "1300") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (fullArray[S] == "1301") {
                 movementAccA += 1;
@@ -4080,7 +4076,7 @@ function step(timestamp) {
             }
             if (fullArray[S] == "1310") {
                 movementAccA += 1;
-                movementAccB += 1;
+                movementAccC += 1;
             }
             if (fullArray[S] == "1311") {
                 movementAccA += 1;
@@ -4116,11 +4112,6 @@ function step(timestamp) {
             }
             if (fullArray[S] == "1330") {
                 movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1330") {
-                movementAccA += 1;
-                movementAccD += 1;
             }
             if (fullArray[S] == "1331") {
                 movementAccA += 1;
@@ -4188,12 +4179,10 @@ function step(timestamp) {
             }
             if (fullArray[S] == "2031") {
                 movementAccA += 1;
-                movementAccB += 1;
                 movementAccD += 1;
             }
             if (fullArray[S] == "2032") {
                 movementAccA += 1;
-                movementAccC += 1;
                 movementAccD += 1;
             }
             if (fullArray[S] == "2033") {
@@ -4264,7 +4253,6 @@ function step(timestamp) {
             if (fullArray[S] == "2130") {
                 movementAccA += 1;
                 movementAccB += 1;
-                movementAccC += 1;
             }
             if (fullArray[S] == "2131") {
                 movementAccA += 1;
@@ -4377,7 +4365,6 @@ function step(timestamp) {
             if (fullArray[S] == "2310") {
                 movementAccA += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (fullArray[S] == "2311") {
                 movementAccA += 1;
@@ -4450,6 +4437,7 @@ function step(timestamp) {
             }
             if (fullArray[S] == "3021") {
                 movementAccC += 1;
+                movementAccD += 1;
             }
             if (fullArray[S] == "3022") {
                 movementAccC += 1;
@@ -4506,6 +4494,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (fullArray[S] == "3122") {
+                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -4529,8 +4518,6 @@ function step(timestamp) {
             }
             if (fullArray[S] == "3200") {
                 movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
             }
             if (fullArray[S] == "3201") {
                 movementAccB += 1;
@@ -4544,7 +4531,6 @@ function step(timestamp) {
                 movementAccB += 1;
             }
             if (fullArray[S] == "3210") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -4563,10 +4549,8 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (fullArray[S] == "3220") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (fullArray[S] == "3221") {
                 movementAccB += 1;
@@ -4620,8 +4604,6 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (fullArray[S] == "3321") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -4631,9 +4613,6 @@ function step(timestamp) {
             }
             if (fullArray[S] == "3323") {
                 movementAccC += 1;
-            }
-            if (fullArray[S] == "3330") {
-                movementAccD += 1;
             }
             if (fullArray[S] == "3331") {
                 movementAccD += 1;
@@ -4719,8 +4698,6 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (secondChart[S] == "0022") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -4784,7 +4761,7 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (secondChart[S] == "0130") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (secondChart[S] == "0131") {
                 movementAccB += 1;
@@ -4795,7 +4772,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (secondChart[S] == "0133") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (secondChart[S] == "0200") {
                 movementAccB += 1;
@@ -4963,7 +4940,6 @@ function step(timestamp) {
             }
             if (secondChart[S] == "1033") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (secondChart[S] == "1100") {
                 movementAccA += 1;
@@ -5127,7 +5103,6 @@ function step(timestamp) {
             }
             if (secondChart[S] == "1300") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (secondChart[S] == "1301") {
                 movementAccA += 1;
@@ -5142,7 +5117,7 @@ function step(timestamp) {
             }
             if (secondChart[S] == "1310") {
                 movementAccA += 1;
-                movementAccB += 1;
+                movementAccC += 1;
             }
             if (secondChart[S] == "1311") {
                 movementAccA += 1;
@@ -5178,11 +5153,6 @@ function step(timestamp) {
             }
             if (secondChart[S] == "1330") {
                 movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1330") {
-                movementAccA += 1;
-                movementAccD += 1;
             }
             if (secondChart[S] == "1331") {
                 movementAccA += 1;
@@ -5250,12 +5220,10 @@ function step(timestamp) {
             }
             if (secondChart[S] == "2031") {
                 movementAccA += 1;
-                movementAccB += 1;
                 movementAccD += 1;
             }
             if (secondChart[S] == "2032") {
                 movementAccA += 1;
-                movementAccC += 1;
                 movementAccD += 1;
             }
             if (secondChart[S] == "2033") {
@@ -5326,7 +5294,6 @@ function step(timestamp) {
             if (secondChart[S] == "2130") {
                 movementAccA += 1;
                 movementAccB += 1;
-                movementAccC += 1;
             }
             if (secondChart[S] == "2131") {
                 movementAccA += 1;
@@ -5439,7 +5406,6 @@ function step(timestamp) {
             if (secondChart[S] == "2310") {
                 movementAccA += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (secondChart[S] == "2311") {
                 movementAccA += 1;
@@ -5512,6 +5478,7 @@ function step(timestamp) {
             }
             if (secondChart[S] == "3021") {
                 movementAccC += 1;
+                movementAccD += 1;
             }
             if (secondChart[S] == "3022") {
                 movementAccC += 1;
@@ -5568,6 +5535,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (secondChart[S] == "3122") {
+                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -5591,8 +5559,6 @@ function step(timestamp) {
             }
             if (secondChart[S] == "3200") {
                 movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
             }
             if (secondChart[S] == "3201") {
                 movementAccB += 1;
@@ -5606,7 +5572,6 @@ function step(timestamp) {
                 movementAccB += 1;
             }
             if (secondChart[S] == "3210") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -5625,10 +5590,8 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (secondChart[S] == "3220") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (secondChart[S] == "3221") {
                 movementAccB += 1;
@@ -5682,8 +5645,6 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (secondChart[S] == "3321") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -5693,9 +5654,6 @@ function step(timestamp) {
             }
             if (secondChart[S] == "3323") {
                 movementAccC += 1;
-            }
-            if (secondChart[S] == "3330") {
-                movementAccD += 1;
             }
             if (secondChart[S] == "3331") {
                 movementAccD += 1;
@@ -5780,8 +5738,6 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart3[S] == "0022") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -5845,7 +5801,7 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart3[S] == "0130") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (chart3[S] == "0131") {
                 movementAccB += 1;
@@ -5856,7 +5812,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart3[S] == "0133") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (chart3[S] == "0200") {
                 movementAccB += 1;
@@ -6024,7 +5980,6 @@ function step(timestamp) {
             }
             if (chart3[S] == "1033") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (chart3[S] == "1100") {
                 movementAccA += 1;
@@ -6188,7 +6143,6 @@ function step(timestamp) {
             }
             if (chart3[S] == "1300") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (chart3[S] == "1301") {
                 movementAccA += 1;
@@ -6203,7 +6157,7 @@ function step(timestamp) {
             }
             if (chart3[S] == "1310") {
                 movementAccA += 1;
-                movementAccB += 1;
+                movementAccC += 1;
             }
             if (chart3[S] == "1311") {
                 movementAccA += 1;
@@ -6239,11 +6193,6 @@ function step(timestamp) {
             }
             if (chart3[S] == "1330") {
                 movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1330") {
-                movementAccA += 1;
-                movementAccD += 1;
             }
             if (chart3[S] == "1331") {
                 movementAccA += 1;
@@ -6311,12 +6260,10 @@ function step(timestamp) {
             }
             if (chart3[S] == "2031") {
                 movementAccA += 1;
-                movementAccB += 1;
                 movementAccD += 1;
             }
             if (chart3[S] == "2032") {
                 movementAccA += 1;
-                movementAccC += 1;
                 movementAccD += 1;
             }
             if (chart3[S] == "2033") {
@@ -6387,7 +6334,6 @@ function step(timestamp) {
             if (chart3[S] == "2130") {
                 movementAccA += 1;
                 movementAccB += 1;
-                movementAccC += 1;
             }
             if (chart3[S] == "2131") {
                 movementAccA += 1;
@@ -6500,7 +6446,6 @@ function step(timestamp) {
             if (chart3[S] == "2310") {
                 movementAccA += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart3[S] == "2311") {
                 movementAccA += 1;
@@ -6573,6 +6518,7 @@ function step(timestamp) {
             }
             if (chart3[S] == "3021") {
                 movementAccC += 1;
+                movementAccD += 1;
             }
             if (chart3[S] == "3022") {
                 movementAccC += 1;
@@ -6629,6 +6575,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart3[S] == "3122") {
+                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -6652,8 +6599,6 @@ function step(timestamp) {
             }
             if (chart3[S] == "3200") {
                 movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart3[S] == "3201") {
                 movementAccB += 1;
@@ -6667,7 +6612,6 @@ function step(timestamp) {
                 movementAccB += 1;
             }
             if (chart3[S] == "3210") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -6686,10 +6630,8 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart3[S] == "3220") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart3[S] == "3221") {
                 movementAccB += 1;
@@ -6743,8 +6685,6 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart3[S] == "3321") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -6754,9 +6694,6 @@ function step(timestamp) {
             }
             if (chart3[S] == "3323") {
                 movementAccC += 1;
-            }
-            if (chart3[S] == "3330") {
-                movementAccD += 1;
             }
             if (chart3[S] == "3331") {
                 movementAccD += 1;
@@ -6841,8 +6778,6 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart4[S] == "0022") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -6906,7 +6841,7 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart4[S] == "0130") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (chart4[S] == "0131") {
                 movementAccB += 1;
@@ -6917,7 +6852,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart4[S] == "0133") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (chart4[S] == "0200") {
                 movementAccB += 1;
@@ -7085,7 +7020,6 @@ function step(timestamp) {
             }
             if (chart4[S] == "1033") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (chart4[S] == "1100") {
                 movementAccA += 1;
@@ -7249,7 +7183,6 @@ function step(timestamp) {
             }
             if (chart4[S] == "1300") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (chart4[S] == "1301") {
                 movementAccA += 1;
@@ -7264,7 +7197,7 @@ function step(timestamp) {
             }
             if (chart4[S] == "1310") {
                 movementAccA += 1;
-                movementAccB += 1;
+                movementAccC += 1;
             }
             if (chart4[S] == "1311") {
                 movementAccA += 1;
@@ -7300,11 +7233,6 @@ function step(timestamp) {
             }
             if (chart4[S] == "1330") {
                 movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1330") {
-                movementAccA += 1;
-                movementAccD += 1;
             }
             if (chart4[S] == "1331") {
                 movementAccA += 1;
@@ -7372,12 +7300,10 @@ function step(timestamp) {
             }
             if (chart4[S] == "2031") {
                 movementAccA += 1;
-                movementAccB += 1;
                 movementAccD += 1;
             }
             if (chart4[S] == "2032") {
                 movementAccA += 1;
-                movementAccC += 1;
                 movementAccD += 1;
             }
             if (chart4[S] == "2033") {
@@ -7448,7 +7374,6 @@ function step(timestamp) {
             if (chart4[S] == "2130") {
                 movementAccA += 1;
                 movementAccB += 1;
-                movementAccC += 1;
             }
             if (chart4[S] == "2131") {
                 movementAccA += 1;
@@ -7561,7 +7486,6 @@ function step(timestamp) {
             if (chart4[S] == "2310") {
                 movementAccA += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart4[S] == "2311") {
                 movementAccA += 1;
@@ -7634,6 +7558,7 @@ function step(timestamp) {
             }
             if (chart4[S] == "3021") {
                 movementAccC += 1;
+                movementAccD += 1;
             }
             if (chart4[S] == "3022") {
                 movementAccC += 1;
@@ -7690,6 +7615,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart4[S] == "3122") {
+                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -7713,8 +7639,6 @@ function step(timestamp) {
             }
             if (chart4[S] == "3200") {
                 movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart4[S] == "3201") {
                 movementAccB += 1;
@@ -7728,7 +7652,6 @@ function step(timestamp) {
                 movementAccB += 1;
             }
             if (chart4[S] == "3210") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -7747,10 +7670,8 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart4[S] == "3220") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart4[S] == "3221") {
                 movementAccB += 1;
@@ -7804,8 +7725,6 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart4[S] == "3321") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -7815,9 +7734,6 @@ function step(timestamp) {
             }
             if (chart4[S] == "3323") {
                 movementAccC += 1;
-            }
-            if (chart4[S] == "3330") {
-                movementAccD += 1;
             }
             if (chart4[S] == "3331") {
                 movementAccD += 1;
@@ -7902,8 +7818,6 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart5[S] == "0022") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -7967,7 +7881,7 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart5[S] == "0130") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (chart5[S] == "0131") {
                 movementAccB += 1;
@@ -7978,7 +7892,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart5[S] == "0133") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (chart5[S] == "0200") {
                 movementAccB += 1;
@@ -8146,7 +8060,6 @@ function step(timestamp) {
             }
             if (chart5[S] == "1033") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (chart5[S] == "1100") {
                 movementAccA += 1;
@@ -8310,7 +8223,6 @@ function step(timestamp) {
             }
             if (chart5[S] == "1300") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (chart5[S] == "1301") {
                 movementAccA += 1;
@@ -8325,7 +8237,7 @@ function step(timestamp) {
             }
             if (chart5[S] == "1310") {
                 movementAccA += 1;
-                movementAccB += 1;
+                movementAccC += 1;
             }
             if (chart5[S] == "1311") {
                 movementAccA += 1;
@@ -8361,11 +8273,6 @@ function step(timestamp) {
             }
             if (chart5[S] == "1330") {
                 movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1330") {
-                movementAccA += 1;
-                movementAccD += 1;
             }
             if (chart5[S] == "1331") {
                 movementAccA += 1;
@@ -8433,12 +8340,10 @@ function step(timestamp) {
             }
             if (chart5[S] == "2031") {
                 movementAccA += 1;
-                movementAccB += 1;
                 movementAccD += 1;
             }
             if (chart5[S] == "2032") {
                 movementAccA += 1;
-                movementAccC += 1;
                 movementAccD += 1;
             }
             if (chart5[S] == "2033") {
@@ -8509,7 +8414,6 @@ function step(timestamp) {
             if (chart5[S] == "2130") {
                 movementAccA += 1;
                 movementAccB += 1;
-                movementAccC += 1;
             }
             if (chart5[S] == "2131") {
                 movementAccA += 1;
@@ -8622,7 +8526,6 @@ function step(timestamp) {
             if (chart5[S] == "2310") {
                 movementAccA += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart5[S] == "2311") {
                 movementAccA += 1;
@@ -8695,6 +8598,7 @@ function step(timestamp) {
             }
             if (chart5[S] == "3021") {
                 movementAccC += 1;
+                movementAccD += 1;
             }
             if (chart5[S] == "3022") {
                 movementAccC += 1;
@@ -8751,6 +8655,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart5[S] == "3122") {
+                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -8774,8 +8679,6 @@ function step(timestamp) {
             }
             if (chart5[S] == "3200") {
                 movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart5[S] == "3201") {
                 movementAccB += 1;
@@ -8789,7 +8692,6 @@ function step(timestamp) {
                 movementAccB += 1;
             }
             if (chart5[S] == "3210") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -8808,10 +8710,8 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart5[S] == "3220") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart5[S] == "3221") {
                 movementAccB += 1;
@@ -8865,8 +8765,6 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart5[S] == "3321") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -8876,9 +8774,6 @@ function step(timestamp) {
             }
             if (chart5[S] == "3323") {
                 movementAccC += 1;
-            }
-            if (chart5[S] == "3330") {
-                movementAccD += 1;
             }
             if (chart5[S] == "3331") {
                 movementAccD += 1;
@@ -8963,8 +8858,6 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart6[S] == "0022") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -9028,7 +8921,7 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart6[S] == "0130") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (chart6[S] == "0131") {
                 movementAccB += 1;
@@ -9039,7 +8932,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart6[S] == "0133") {
-                movementAccA += 1;
+                movementAccB += 1;
             }
             if (chart6[S] == "0200") {
                 movementAccB += 1;
@@ -9207,7 +9100,6 @@ function step(timestamp) {
             }
             if (chart6[S] == "1033") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (chart6[S] == "1100") {
                 movementAccA += 1;
@@ -9371,7 +9263,6 @@ function step(timestamp) {
             }
             if (chart6[S] == "1300") {
                 movementAccA += 1;
-                movementAccB += 1;
             }
             if (chart6[S] == "1301") {
                 movementAccA += 1;
@@ -9386,7 +9277,7 @@ function step(timestamp) {
             }
             if (chart6[S] == "1310") {
                 movementAccA += 1;
-                movementAccB += 1;
+                movementAccC += 1;
             }
             if (chart6[S] == "1311") {
                 movementAccA += 1;
@@ -9422,11 +9313,6 @@ function step(timestamp) {
             }
             if (chart6[S] == "1330") {
                 movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1330") {
-                movementAccA += 1;
-                movementAccD += 1;
             }
             if (chart6[S] == "1331") {
                 movementAccA += 1;
@@ -9494,12 +9380,10 @@ function step(timestamp) {
             }
             if (chart6[S] == "2031") {
                 movementAccA += 1;
-                movementAccB += 1;
                 movementAccD += 1;
             }
             if (chart6[S] == "2032") {
                 movementAccA += 1;
-                movementAccC += 1;
                 movementAccD += 1;
             }
             if (chart6[S] == "2033") {
@@ -9570,7 +9454,6 @@ function step(timestamp) {
             if (chart6[S] == "2130") {
                 movementAccA += 1;
                 movementAccB += 1;
-                movementAccC += 1;
             }
             if (chart6[S] == "2131") {
                 movementAccA += 1;
@@ -9683,7 +9566,6 @@ function step(timestamp) {
             if (chart6[S] == "2310") {
                 movementAccA += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart6[S] == "2311") {
                 movementAccA += 1;
@@ -9756,6 +9638,7 @@ function step(timestamp) {
             }
             if (chart6[S] == "3021") {
                 movementAccC += 1;
+                movementAccD += 1;
             }
             if (chart6[S] == "3022") {
                 movementAccC += 1;
@@ -9812,6 +9695,7 @@ function step(timestamp) {
                 movementAccD += 1;
             }
             if (chart6[S] == "3122") {
+                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -9835,8 +9719,6 @@ function step(timestamp) {
             }
             if (chart6[S] == "3200") {
                 movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart6[S] == "3201") {
                 movementAccB += 1;
@@ -9850,7 +9732,6 @@ function step(timestamp) {
                 movementAccB += 1;
             }
             if (chart6[S] == "3210") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -9869,10 +9750,8 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart6[S] == "3220") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                movementAccD += 1;
             }
             if (chart6[S] == "3221") {
                 movementAccB += 1;
@@ -9926,8 +9805,6 @@ function step(timestamp) {
                 movementAccC += 1;
             }
             if (chart6[S] == "3321") {
-                movementAccA += 1;
-                movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
@@ -9937,9 +9814,6 @@ function step(timestamp) {
             }
             if (chart6[S] == "3323") {
                 movementAccC += 1;
-            }
-            if (chart6[S] == "3330") {
-                movementAccD += 1;
             }
             if (chart6[S] == "3331") {
                 movementAccD += 1;
