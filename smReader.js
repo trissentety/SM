@@ -610,6 +610,7 @@ var stopStop = 0;
 var artist = "";
 var timeInterval1;
 var tickDuration;
+var rate = 1;
 document.getElementById("uploadButton").addEventListener("click", uploadChange);
 function uploadChange() {
     upload = 1;
@@ -942,6 +943,7 @@ document.getElementById("span14").innerHTML = "Note Color" + " " + noteColorV
 document.getElementById("span15").innerHTML = "Judge Offset" + " " + judgeOffsetV
 document.getElementById("span16").innerHTML = "Chart Number" + " " + chartNumber
 document.getElementById("span18").innerHTML = "Background 2" + " " + background2
+document.getElementById("span20").innerHTML = "Rate" + " " + rate
 document.getElementById("ultimate").innerHTML = "U" + " " + ultimate
 document.getElementById("fancy").innerHTML = "F" + " " + fancy
 document.getElementById("stunning").innerHTML = "S" + " " + stunning
@@ -974,6 +976,7 @@ async function buttonPlay() {
         setTimeout(function () {
             audio.pause()
             audio.play();
+            audio.playbackRate = rate;
         }, (offsetClean * 1000) + audioSync + audioSync2)
         // audio.play();
     }
@@ -985,12 +988,14 @@ async function buttonPlay() {
         setTimeout(function () {
             audio.pause()
             audio.play();
+            audio.playbackRate = rate;
         }, audioSync + audioSync2)
     }
     if (offsetClean == 0) {
         setTimeout(function () {
             audio.pause()
             audio.play();
+            audio.playbackRate = rate;
         }, audioSync + audioSync2)
     }
     // var audio = document.getElementById("audio")
@@ -3169,7 +3174,7 @@ function step(timestamp) {
                     currentDifferenceAcc = currentDifference;
                 }
             }
-            difference = (timeS - nTime + .000000000001) * 48 * stepRate / 1000
+            difference = (timeS - nTime + .000000000001) * 48 * stepRate * rate / 1000
         }
         elapsedTime = timeS - cTime
         // differenceStepRate = difference * commaIndexValue;
@@ -20240,6 +20245,56 @@ function chartNumberM() {
     document.getElementById("span16").innerHTML = "Chart Number" + " " + chartNumber
     save();
 }
+
+function rateP() {
+    rate += 0.05;
+    rate.toFixed(2);
+    audio.playbackRate = rate;
+    if (rate <= 0) {
+        rate = 1;
+        document.getElementById("span20").style.marginRight = ".8" + "em"
+    }
+    if (rate == 1) {
+        document.getElementById("span20").style.marginRight = ".48" + "em"
+    }
+    if (rate > 1) {
+        document.getElementById("span20").style.marginRight = "3.14" + "em"
+    }
+    if (rate > 10) {
+        document.getElementById("span20").style.marginRight = "2.64" + "em"
+    }
+    if (rate <= 1) {
+        document.getElementById("span20").style.marginRight = "3.14" + "em"
+    }
+    document.getElementById("span20").innerHTML = "Rate" + " " + rate.toFixed(2);
+    save();
+}
+function rateM() {
+    rate -= 0.05;
+    audio.playbackRate = rate;
+    if (rate <= 0) {
+        rate = 1;
+        document.getElementById("span20").style.marginRight = ".8" + "em"
+    }
+    if (rate == 1) {
+        document.getElementById("span20").style.marginRight = ".48" + "em"
+    }
+    if (rate > 1) {
+        document.getElementById("span20").style.marginRight = "3.14" + "em"
+    }
+    if (rate > 10) {
+        document.getElementById("span20").style.marginRight = "2.64" + "em"
+    }
+    if (rate <= 1) {
+        document.getElementById("span20").style.marginRight = "3.14" + "em"
+    }
+    document.getElementById("span20").innerHTML = "Rate" + " " + rate.toFixed(2);
+    save();
+}
+
+
+
+
 function noteColorN() {
     if (noteColorV < 12)
         document.getElementById("span14").innerHTML = "Note Color" + " " + noteColorV
