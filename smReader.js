@@ -3144,19 +3144,19 @@ function step(timestamp) {
                     combo = 0;
                     nTime = timestamp
                     if (tickDuration < 260) {
-                        nTime = timestamp - 19
+                        nTime = timestamp - 21
                     }
                     if (tickDuration >= 260 && tickDuration < 275) {
-                        nTime = timestamp - 17.0
+                        nTime = timestamp - 19
                     }
                     if (tickDuration >= 275 && tickDuration < 400) {
-                        nTime = timestamp - 17.0
+                        nTime = timestamp - 19
                     }
                     if (tickDuration >= 400 && tickDuration < 600) {
-                        nTime = timestamp - 16.7
+                        nTime = timestamp - 17
                     }
                     if (tickDuration >= 600 && tickDuration < 1000) {
-                        nTime = timestamp - 16.7
+                        nTime = timestamp - 15
                     }
                     if (tickDuration >= 1000) {
                         nTime = timestamp - 15
@@ -3629,293 +3629,127 @@ function step(timestamp) {
         //     }, 4)
         // }
         if (chartNumber == 1) {
-            if (fullArray[S] == "1000") {
-                movementAccA += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
+            if (fullArray[S] == "0001") {
+                movementAccD += 1;
             }
-            if (fullArray[S] == "0100") {
-                movementAccB += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
+            if (fullArray[S] == "0002") {
+                movementAccD += 1;
             }
             if (fullArray[S] == "0010") {
                 movementAccC += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (fullArray[S] == "0001") {
-                movementAccD += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-            }
-            if (fullArray[S] == "1100") {
-                movementAccA += 1;
-                movementAccB += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-            }
-            if (fullArray[S] == "1010") {
-                movementAccA += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (fullArray[S] == "1001") {
-                movementAccA += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-            }
-            if (fullArray[S] == "0110") {
-                movementAccB += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (fullArray[S] == "0101") {
-                movementAccB += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
             if (fullArray[S] == "0011") {
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (fullArray[S] == "1110") {
+            if (fullArray[S] == "0012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0013") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0020") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0021") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0022") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
+                movementAccD += 1;
             }
-            if (fullArray[S] == "1101") {
-                movementAccA += 1;
+            if (fullArray[S] == "0023") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0031") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0032") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0100") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "0101") {
                 movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (fullArray[S] == "1011") {
-                movementAccA += 1;
-                movementAccC += 1;
+            if (fullArray[S] == "0102") {
+                movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
+            }
+            if (fullArray[S] == "0103") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "0110") {
+                movementAccB += 1;
+                movementAccC += 1;
             }
             if (fullArray[S] == "0111") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (fullArray[S] == "1111") {
-                movementAccA += 1;
+            if (fullArray[S] == "0112") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 4;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (fullArray[S] == "2000") {
+            if (fullArray[S] == "0113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0122") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0130") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "0131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0133") {
                 movementAccA += 1;
             }
             if (fullArray[S] == "0200") {
                 movementAccB += 1;
             }
-            if (fullArray[S] == "0020") {
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0002") {
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2200") {
-                movementAccA += 1;
+            if (fullArray[S] == "0201") {
                 movementAccB += 1;
-            }
-            if (fullArray[S] == "2020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "2002") {
-                movementAccA += 1;
                 movementAccD += 1;
-            }
-            if (fullArray[S] == "0220") {
-                movementAccB += 1;
-                movementAccC += 1;
             }
             if (fullArray[S] == "0202") {
                 movementAccB += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "0022") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "2202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "0222") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2222") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2100") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "2010") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "2001") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2110") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "2101") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2011") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2111") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1200") {
-                movementAccA += 1;
+            if (fullArray[S] == "0203") {
                 movementAccB += 1;
             }
             if (fullArray[S] == "0210") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0201") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1210") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "1201") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -3924,60 +3758,103 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "1211") {
-                movementAccA += 1;
+            if (fullArray[S] == "0213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0220") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0221") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "1020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0120") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0021") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "1021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "0121") {
+            if (fullArray[S] == "0222") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "1121") {
-                movementAccA += 1;
+            if (fullArray[S] == "0223") {
                 movementAccB += 1;
                 movementAccC += 1;
+            }
+            if (fullArray[S] == "0230") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "0231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0233") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "0301") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0302") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0310") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0313") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0320") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0321") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0323") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "0331") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "0332") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1000") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "1001") {
+                movementAccA += 1;
                 movementAccD += 1;
             }
             if (fullArray[S] == "1002") {
                 movementAccA += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "0102") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "0012") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1102") {
+            if (fullArray[S] == "1003") {
                 movementAccA += 1;
-                movementAccB += 1;
+            }
+            if (fullArray[S] == "1010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1011") {
+                movementAccA += 1;
+                movementAccC += 1;
                 movementAccD += 1;
             }
             if (fullArray[S] == "1012") {
@@ -3985,7 +3862,72 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "0112") {
+            if (fullArray[S] == "1013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1030") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "1031") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1032") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1033") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1111") {
+                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -3996,300 +3938,18 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "3100") {
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "3010") {
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "3001") {
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "3110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "3101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "3011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "3111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1300") {
-                movementAccA += 1;
-            }
-            if (fullArray[S] == "0310") {
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0301") {
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1310") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "1301") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0311") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1311") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1030") {
-                movementAccA += 1;
-            }
-            if (fullArray[S] == "0130") {
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "0031") {
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1130") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "1031") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "0131") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1131") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1003") {
-                movementAccA += 1;
-            }
-            if (fullArray[S] == "0103") {
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "0013") {
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "1103") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "1013") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0113") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
             if (fullArray[S] == "1113") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (fullArray[S] == "4100") {
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "4010") {
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "4001") {
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "4110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "4101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "4011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "4111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1400") {
-                movementAccA += 1;
-            }
-            if (fullArray[S] == "0410") {
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0401") {
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1410") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "1401") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0411") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1411") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1040") {
-                movementAccA += 1;
-            }
-            if (fullArray[S] == "0140") {
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "0041") {
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1140") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "1041") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "0141") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1141") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1004") {
-                movementAccA += 1;
-            }
-            if (fullArray[S] == "0104") {
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "0014") {
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "1104") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (fullArray[S] == "1014") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0114") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "1114") {
+            if (fullArray[S] == "1120") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (fullArray[S] == "2210") {
+            if (fullArray[S] == "1121") {
                 movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "2201") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2211") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "2021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2121") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2102") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2012") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "2112") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (fullArray[S] == "0221") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1221") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "0212") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1212") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "1022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (fullArray[S] == "0122") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -4300,19 +3960,75 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "2221") {
+            if (fullArray[S] == "1123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1130") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1211") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "2122") {
+            if (fullArray[S] == "1212") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (fullArray[S] == "2212") {
+            if (fullArray[S] == "1213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1221") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
@@ -4324,6 +4040,608 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
+            if (fullArray[S] == "1223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1300") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1303") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "1310") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "1311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "1333") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "2000") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "2001") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2002") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2003") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "2010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2011") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2012") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2030") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "2031") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2032") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2033") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "2100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "2101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "2110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2111") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2112") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2113") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2120") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2121") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2122") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2130") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "2200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "2201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2202") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "2210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2211") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2212") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2221") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2222") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "2231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "2300") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "2301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2303") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "2310") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "2330") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "2331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "2333") {
+                movementAccA += 1;
+            }
+            if (fullArray[S] == "3001") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3002") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3010") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3011") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3013") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3020") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3021") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3022") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3023") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3031") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3032") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3100") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "3101") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3102") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3103") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "3110") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3111") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3112") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3122") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3130") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "3131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3133") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "3200") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3201") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3202") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3203") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "3210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3211") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3212") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3221") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3222") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3223") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3230") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "3231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3233") {
+                movementAccB += 1;
+            }
+            if (fullArray[S] == "3301") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3302") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3310") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3313") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3320") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3321") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3323") {
+                movementAccC += 1;
+            }
+            if (fullArray[S] == "3330") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3331") {
+                movementAccD += 1;
+            }
+            if (fullArray[S] == "3332") {
+                movementAccD += 1;
+            }
+
             // document.getElementById("+6tick").innerHTML = " Tick " + a + " S " + S
         }
     }
@@ -4373,293 +4691,127 @@ function step(timestamp) {
         //     }, 4)
         // }
         if (chartNumber == 2) {
-            if (secondChart[S] == "1000") {
-                movementAccA += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
+            if (secondChart[S] == "0001") {
+                movementAccD += 1;
             }
-            if (secondChart[S] == "0100") {
-                movementAccB += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
+            if (secondChart[S] == "0002") {
+                movementAccD += 1;
             }
             if (secondChart[S] == "0010") {
                 movementAccC += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (secondChart[S] == "0001") {
-                movementAccD += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-            }
-            if (secondChart[S] == "1100") {
-                movementAccA += 1;
-                movementAccB += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-            }
-            if (secondChart[S] == "1010") {
-                movementAccA += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (secondChart[S] == "1001") {
-                movementAccA += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-            }
-            if (secondChart[S] == "0110") {
-                movementAccB += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (secondChart[S] == "0101") {
-                movementAccB += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
             if (secondChart[S] == "0011") {
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (secondChart[S] == "1110") {
+            if (secondChart[S] == "0012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0013") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0020") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0021") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0022") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
+                movementAccD += 1;
             }
-            if (secondChart[S] == "1101") {
-                movementAccA += 1;
+            if (secondChart[S] == "0023") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0031") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0032") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0100") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "0101") {
                 movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (secondChart[S] == "1011") {
-                movementAccA += 1;
-                movementAccC += 1;
+            if (secondChart[S] == "0102") {
+                movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
+            }
+            if (secondChart[S] == "0103") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "0110") {
+                movementAccB += 1;
+                movementAccC += 1;
             }
             if (secondChart[S] == "0111") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (secondChart[S] == "1111") {
-                movementAccA += 1;
+            if (secondChart[S] == "0112") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 4;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (secondChart[S] == "2000") {
+            if (secondChart[S] == "0113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0122") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0130") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "0131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0133") {
                 movementAccA += 1;
             }
             if (secondChart[S] == "0200") {
                 movementAccB += 1;
             }
-            if (secondChart[S] == "0020") {
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0002") {
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2200") {
-                movementAccA += 1;
+            if (secondChart[S] == "0201") {
                 movementAccB += 1;
-            }
-            if (secondChart[S] == "2020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "2002") {
-                movementAccA += 1;
                 movementAccD += 1;
-            }
-            if (secondChart[S] == "0220") {
-                movementAccB += 1;
-                movementAccC += 1;
             }
             if (secondChart[S] == "0202") {
                 movementAccB += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "0022") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "2202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "0222") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2222") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2100") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "2010") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "2001") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2110") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "2101") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2011") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2111") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1200") {
-                movementAccA += 1;
+            if (secondChart[S] == "0203") {
                 movementAccB += 1;
             }
             if (secondChart[S] == "0210") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0201") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1210") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "1201") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -4668,60 +4820,103 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "1211") {
-                movementAccA += 1;
+            if (secondChart[S] == "0213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0220") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0221") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "1020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0120") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0021") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "1021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "0121") {
+            if (secondChart[S] == "0222") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "1121") {
-                movementAccA += 1;
+            if (secondChart[S] == "0223") {
                 movementAccB += 1;
                 movementAccC += 1;
+            }
+            if (secondChart[S] == "0230") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "0231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0233") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "0301") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0302") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0310") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0313") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0320") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0321") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0323") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "0331") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "0332") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1000") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "1001") {
+                movementAccA += 1;
                 movementAccD += 1;
             }
             if (secondChart[S] == "1002") {
                 movementAccA += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "0102") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "0012") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1102") {
+            if (secondChart[S] == "1003") {
                 movementAccA += 1;
-                movementAccB += 1;
+            }
+            if (secondChart[S] == "1010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1011") {
+                movementAccA += 1;
+                movementAccC += 1;
                 movementAccD += 1;
             }
             if (secondChart[S] == "1012") {
@@ -4729,7 +4924,72 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "0112") {
+            if (secondChart[S] == "1013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1030") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "1031") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1032") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1033") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1111") {
+                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -4740,300 +5000,18 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "3100") {
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "3010") {
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "3001") {
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "3110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "3101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "3011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "3111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1300") {
-                movementAccA += 1;
-            }
-            if (secondChart[S] == "0310") {
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0301") {
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1310") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "1301") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0311") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1311") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1030") {
-                movementAccA += 1;
-            }
-            if (secondChart[S] == "0130") {
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "0031") {
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1130") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "1031") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "0131") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1131") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1003") {
-                movementAccA += 1;
-            }
-            if (secondChart[S] == "0103") {
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "0013") {
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "1103") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "1013") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0113") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
             if (secondChart[S] == "1113") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (secondChart[S] == "4100") {
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "4010") {
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "4001") {
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "4110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "4101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "4011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "4111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1400") {
-                movementAccA += 1;
-            }
-            if (secondChart[S] == "0410") {
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0401") {
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1410") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "1401") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0411") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1411") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1040") {
-                movementAccA += 1;
-            }
-            if (secondChart[S] == "0140") {
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "0041") {
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1140") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "1041") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "0141") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1141") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1004") {
-                movementAccA += 1;
-            }
-            if (secondChart[S] == "0104") {
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "0014") {
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "1104") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (secondChart[S] == "1014") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0114") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "1114") {
+            if (secondChart[S] == "1120") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (secondChart[S] == "2210") {
+            if (secondChart[S] == "1121") {
                 movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "2201") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2211") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "2021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2121") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2102") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2012") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "2112") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (secondChart[S] == "0221") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1221") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "0212") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1212") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "1022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (secondChart[S] == "0122") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -5044,19 +5022,75 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "2221") {
+            if (secondChart[S] == "1123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1130") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1211") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "2122") {
+            if (secondChart[S] == "1212") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (secondChart[S] == "2212") {
+            if (secondChart[S] == "1213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1221") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
@@ -5068,6 +5102,608 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
+            if (secondChart[S] == "1223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1300") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1303") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "1310") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "1311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "1333") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "2000") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "2001") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2002") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2003") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "2010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2011") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2012") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2030") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "2031") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2032") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2033") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "2100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "2101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "2110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2111") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2112") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2113") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2120") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2121") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2122") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2130") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "2200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "2201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2202") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "2210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2211") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2212") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2221") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2222") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "2231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "2300") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "2301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2303") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "2310") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "2330") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "2331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "2333") {
+                movementAccA += 1;
+            }
+            if (secondChart[S] == "3001") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3002") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3010") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3011") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3013") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3020") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3021") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3022") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3023") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3031") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3032") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3100") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "3101") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3102") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3103") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "3110") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3111") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3112") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3122") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3130") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "3131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3133") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "3200") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3201") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3202") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3203") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "3210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3211") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3212") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3221") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3222") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3223") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3230") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "3231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3233") {
+                movementAccB += 1;
+            }
+            if (secondChart[S] == "3301") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3302") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3310") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3313") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3320") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3321") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3323") {
+                movementAccC += 1;
+            }
+            if (secondChart[S] == "3330") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3331") {
+                movementAccD += 1;
+            }
+            if (secondChart[S] == "3332") {
+                movementAccD += 1;
+            }
+
             // document.getElementById("+6tick").innerHTML = " Tick " + a + " S " + S
         }
     }
@@ -5116,293 +5752,127 @@ function step(timestamp) {
         //     }, 4)
         // }
         if (chartNumber == 3) {
-            if (chart3[S] == "1000") {
-                movementAccA += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
+            if (chart3[S] == "0001") {
+                movementAccD += 1;
             }
-            if (chart3[S] == "0100") {
-                movementAccB += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
+            if (chart3[S] == "0002") {
+                movementAccD += 1;
             }
             if (chart3[S] == "0010") {
                 movementAccC += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart3[S] == "0001") {
-                movementAccD += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-            }
-            if (chart3[S] == "1100") {
-                movementAccA += 1;
-                movementAccB += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-            }
-            if (chart3[S] == "1010") {
-                movementAccA += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart3[S] == "1001") {
-                movementAccA += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-            }
-            if (chart3[S] == "0110") {
-                movementAccB += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart3[S] == "0101") {
-                movementAccB += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
             if (chart3[S] == "0011") {
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart3[S] == "1110") {
+            if (chart3[S] == "0012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0013") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0020") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0021") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0022") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
+                movementAccD += 1;
             }
-            if (chart3[S] == "1101") {
-                movementAccA += 1;
+            if (chart3[S] == "0023") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0031") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0032") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0100") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "0101") {
                 movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart3[S] == "1011") {
-                movementAccA += 1;
-                movementAccC += 1;
+            if (chart3[S] == "0102") {
+                movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
+            }
+            if (chart3[S] == "0103") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "0110") {
+                movementAccB += 1;
+                movementAccC += 1;
             }
             if (chart3[S] == "0111") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart3[S] == "1111") {
-                movementAccA += 1;
+            if (chart3[S] == "0112") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 4;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart3[S] == "2000") {
+            if (chart3[S] == "0113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0122") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0130") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "0131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0133") {
                 movementAccA += 1;
             }
             if (chart3[S] == "0200") {
                 movementAccB += 1;
             }
-            if (chart3[S] == "0020") {
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0002") {
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2200") {
-                movementAccA += 1;
+            if (chart3[S] == "0201") {
                 movementAccB += 1;
-            }
-            if (chart3[S] == "2020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "2002") {
-                movementAccA += 1;
                 movementAccD += 1;
-            }
-            if (chart3[S] == "0220") {
-                movementAccB += 1;
-                movementAccC += 1;
             }
             if (chart3[S] == "0202") {
                 movementAccB += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "0022") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "2202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "0222") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2222") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2100") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart3[S] == "2010") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "2001") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2110") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "2101") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2011") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2111") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1200") {
-                movementAccA += 1;
+            if (chart3[S] == "0203") {
                 movementAccB += 1;
             }
             if (chart3[S] == "0210") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0201") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1210") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "1201") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -5411,60 +5881,103 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "1211") {
-                movementAccA += 1;
+            if (chart3[S] == "0213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0220") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0221") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "1020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0120") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0021") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "1021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "0121") {
+            if (chart3[S] == "0222") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "1121") {
-                movementAccA += 1;
+            if (chart3[S] == "0223") {
                 movementAccB += 1;
                 movementAccC += 1;
+            }
+            if (chart3[S] == "0230") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "0231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0233") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "0301") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0302") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0310") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0313") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0320") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0321") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0323") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "0331") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "0332") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1000") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "1001") {
+                movementAccA += 1;
                 movementAccD += 1;
             }
             if (chart3[S] == "1002") {
                 movementAccA += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "0102") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "0012") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1102") {
+            if (chart3[S] == "1003") {
                 movementAccA += 1;
-                movementAccB += 1;
+            }
+            if (chart3[S] == "1010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1011") {
+                movementAccA += 1;
+                movementAccC += 1;
                 movementAccD += 1;
             }
             if (chart3[S] == "1012") {
@@ -5472,7 +5985,72 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "0112") {
+            if (chart3[S] == "1013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1030") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "1031") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1032") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1033") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1111") {
+                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -5483,300 +6061,18 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "3100") {
-                movementAccB += 1;
-            }
-            if (chart3[S] == "3010") {
-                movementAccC += 1;
-            }
-            if (chart3[S] == "3001") {
-                movementAccD += 1;
-            }
-            if (chart3[S] == "3110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "3101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "3011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "3111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1300") {
-                movementAccA += 1;
-            }
-            if (chart3[S] == "0310") {
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0301") {
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1310") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "1301") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0311") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1311") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1030") {
-                movementAccA += 1;
-            }
-            if (chart3[S] == "0130") {
-                movementAccB += 1;
-            }
-            if (chart3[S] == "0031") {
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1130") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart3[S] == "1031") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "0131") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1131") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1003") {
-                movementAccA += 1;
-            }
-            if (chart3[S] == "0103") {
-                movementAccB += 1;
-            }
-            if (chart3[S] == "0013") {
-                movementAccC += 1;
-            }
-            if (chart3[S] == "1103") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart3[S] == "1013") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0113") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
             if (chart3[S] == "1113") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (chart3[S] == "4100") {
-                movementAccB += 1;
-            }
-            if (chart3[S] == "4010") {
-                movementAccC += 1;
-            }
-            if (chart3[S] == "4001") {
-                movementAccD += 1;
-            }
-            if (chart3[S] == "4110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "4101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "4011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "4111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1400") {
-                movementAccA += 1;
-            }
-            if (chart3[S] == "0410") {
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0401") {
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1410") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "1401") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0411") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1411") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1040") {
-                movementAccA += 1;
-            }
-            if (chart3[S] == "0140") {
-                movementAccB += 1;
-            }
-            if (chart3[S] == "0041") {
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1140") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart3[S] == "1041") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "0141") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1141") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1004") {
-                movementAccA += 1;
-            }
-            if (chart3[S] == "0104") {
-                movementAccB += 1;
-            }
-            if (chart3[S] == "0014") {
-                movementAccC += 1;
-            }
-            if (chart3[S] == "1104") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart3[S] == "1014") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0114") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "1114") {
+            if (chart3[S] == "1120") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (chart3[S] == "2210") {
+            if (chart3[S] == "1121") {
                 movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "2201") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2211") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "2021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2121") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2102") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2012") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "2112") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart3[S] == "0221") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1221") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "0212") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1212") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "1022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart3[S] == "0122") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -5787,19 +6083,75 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "2221") {
+            if (chart3[S] == "1123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1130") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1211") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "2122") {
+            if (chart3[S] == "1212") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart3[S] == "2212") {
+            if (chart3[S] == "1213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1221") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
@@ -5811,6 +6163,608 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
+            if (chart3[S] == "1223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1300") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1303") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "1310") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "1311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "1333") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "2000") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "2001") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2002") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2003") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "2010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2011") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2012") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2030") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "2031") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2032") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2033") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "2100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "2101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "2110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2111") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2112") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2113") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2120") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2121") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2122") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2130") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "2200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "2201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2202") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "2210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2211") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2212") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2221") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2222") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "2231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart3[S] == "2300") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "2301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2303") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "2310") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "2330") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "2331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "2333") {
+                movementAccA += 1;
+            }
+            if (chart3[S] == "3001") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3002") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3010") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3011") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3013") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3020") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3021") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3022") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3023") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3031") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3032") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3100") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "3101") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3102") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3103") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "3110") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3111") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3112") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3122") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3130") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "3131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3133") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "3200") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3201") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3202") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3203") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "3210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3211") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3212") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3221") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3222") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3223") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3230") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "3231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3233") {
+                movementAccB += 1;
+            }
+            if (chart3[S] == "3301") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3302") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3310") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3313") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3320") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3321") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3323") {
+                movementAccC += 1;
+            }
+            if (chart3[S] == "3330") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3331") {
+                movementAccD += 1;
+            }
+            if (chart3[S] == "3332") {
+                movementAccD += 1;
+            }
+
             // document.getElementById("+6tick").innerHTML = " Tick " + a + " S " + S
         }
     }
@@ -5859,293 +6813,127 @@ function step(timestamp) {
         //     }, 4)
         // }
         if (chartNumber == 4) {
-            if (chart4[S] == "1000") {
-                movementAccA += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
+            if (chart4[S] == "0001") {
+                movementAccD += 1;
             }
-            if (chart4[S] == "0100") {
-                movementAccB += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
+            if (chart4[S] == "0002") {
+                movementAccD += 1;
             }
             if (chart4[S] == "0010") {
                 movementAccC += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart4[S] == "0001") {
-                movementAccD += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-            }
-            if (chart4[S] == "1100") {
-                movementAccA += 1;
-                movementAccB += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-            }
-            if (chart4[S] == "1010") {
-                movementAccA += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart4[S] == "1001") {
-                movementAccA += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-            }
-            if (chart4[S] == "0110") {
-                movementAccB += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart4[S] == "0101") {
-                movementAccB += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
             if (chart4[S] == "0011") {
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart4[S] == "1110") {
+            if (chart4[S] == "0012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0013") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0020") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0021") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0022") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
+                movementAccD += 1;
             }
-            if (chart4[S] == "1101") {
-                movementAccA += 1;
+            if (chart4[S] == "0023") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0031") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0032") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0100") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "0101") {
                 movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart4[S] == "1011") {
-                movementAccA += 1;
-                movementAccC += 1;
+            if (chart4[S] == "0102") {
+                movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
+            }
+            if (chart4[S] == "0103") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "0110") {
+                movementAccB += 1;
+                movementAccC += 1;
             }
             if (chart4[S] == "0111") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart4[S] == "1111") {
-                movementAccA += 1;
+            if (chart4[S] == "0112") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 4;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart4[S] == "2000") {
+            if (chart4[S] == "0113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0122") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0130") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "0131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0133") {
                 movementAccA += 1;
             }
             if (chart4[S] == "0200") {
                 movementAccB += 1;
             }
-            if (chart4[S] == "0020") {
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0002") {
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2200") {
-                movementAccA += 1;
+            if (chart4[S] == "0201") {
                 movementAccB += 1;
-            }
-            if (chart4[S] == "2020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "2002") {
-                movementAccA += 1;
                 movementAccD += 1;
-            }
-            if (chart4[S] == "0220") {
-                movementAccB += 1;
-                movementAccC += 1;
             }
             if (chart4[S] == "0202") {
                 movementAccB += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "0022") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "2202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "0222") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2222") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2100") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart4[S] == "2010") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "2001") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2110") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "2101") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2011") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2111") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1200") {
-                movementAccA += 1;
+            if (chart4[S] == "0203") {
                 movementAccB += 1;
             }
             if (chart4[S] == "0210") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0201") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1210") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "1201") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -6154,60 +6942,103 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "1211") {
-                movementAccA += 1;
+            if (chart4[S] == "0213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0220") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0221") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "1020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0120") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0021") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "1021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "0121") {
+            if (chart4[S] == "0222") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "1121") {
-                movementAccA += 1;
+            if (chart4[S] == "0223") {
                 movementAccB += 1;
                 movementAccC += 1;
+            }
+            if (chart4[S] == "0230") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "0231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0233") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "0301") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0302") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0310") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0313") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0320") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0321") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0323") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "0331") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "0332") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1000") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "1001") {
+                movementAccA += 1;
                 movementAccD += 1;
             }
             if (chart4[S] == "1002") {
                 movementAccA += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "0102") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "0012") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1102") {
+            if (chart4[S] == "1003") {
                 movementAccA += 1;
-                movementAccB += 1;
+            }
+            if (chart4[S] == "1010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1011") {
+                movementAccA += 1;
+                movementAccC += 1;
                 movementAccD += 1;
             }
             if (chart4[S] == "1012") {
@@ -6215,7 +7046,72 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "0112") {
+            if (chart4[S] == "1013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1030") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "1031") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1032") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1033") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1111") {
+                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -6226,300 +7122,18 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "3100") {
-                movementAccB += 1;
-            }
-            if (chart4[S] == "3010") {
-                movementAccC += 1;
-            }
-            if (chart4[S] == "3001") {
-                movementAccD += 1;
-            }
-            if (chart4[S] == "3110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "3101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "3011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "3111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1300") {
-                movementAccA += 1;
-            }
-            if (chart4[S] == "0310") {
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0301") {
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1310") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "1301") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0311") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1311") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1030") {
-                movementAccA += 1;
-            }
-            if (chart4[S] == "0130") {
-                movementAccB += 1;
-            }
-            if (chart4[S] == "0031") {
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1130") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart4[S] == "1031") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "0131") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1131") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1003") {
-                movementAccA += 1;
-            }
-            if (chart4[S] == "0103") {
-                movementAccB += 1;
-            }
-            if (chart4[S] == "0013") {
-                movementAccC += 1;
-            }
-            if (chart4[S] == "1103") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart4[S] == "1013") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0113") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
             if (chart4[S] == "1113") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (chart4[S] == "4100") {
-                movementAccB += 1;
-            }
-            if (chart4[S] == "4010") {
-                movementAccC += 1;
-            }
-            if (chart4[S] == "4001") {
-                movementAccD += 1;
-            }
-            if (chart4[S] == "4110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "4101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "4011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "4111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1400") {
-                movementAccA += 1;
-            }
-            if (chart4[S] == "0410") {
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0401") {
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1410") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "1401") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0411") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1411") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1040") {
-                movementAccA += 1;
-            }
-            if (chart4[S] == "0140") {
-                movementAccB += 1;
-            }
-            if (chart4[S] == "0041") {
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1140") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart4[S] == "1041") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "0141") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1141") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1004") {
-                movementAccA += 1;
-            }
-            if (chart4[S] == "0104") {
-                movementAccB += 1;
-            }
-            if (chart4[S] == "0014") {
-                movementAccC += 1;
-            }
-            if (chart4[S] == "1104") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart4[S] == "1014") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0114") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "1114") {
+            if (chart4[S] == "1120") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (chart4[S] == "2210") {
+            if (chart4[S] == "1121") {
                 movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "2201") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2211") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "2021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2121") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2102") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2012") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "2112") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart4[S] == "0221") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1221") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "0212") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1212") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "1022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart4[S] == "0122") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -6530,19 +7144,75 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "2221") {
+            if (chart4[S] == "1123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1130") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1211") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "2122") {
+            if (chart4[S] == "1212") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart4[S] == "2212") {
+            if (chart4[S] == "1213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1221") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
@@ -6554,6 +7224,608 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
+            if (chart4[S] == "1223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1300") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1303") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "1310") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "1311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "1333") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "2000") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "2001") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2002") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2003") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "2010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2011") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2012") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2030") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "2031") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2032") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2033") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "2100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "2101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "2110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2111") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2112") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2113") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2120") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2121") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2122") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2130") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "2200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "2201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2202") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "2210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2211") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2212") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2221") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2222") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "2231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart4[S] == "2300") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "2301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2303") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "2310") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "2330") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "2331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "2333") {
+                movementAccA += 1;
+            }
+            if (chart4[S] == "3001") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3002") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3010") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3011") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3013") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3020") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3021") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3022") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3023") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3031") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3032") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3100") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "3101") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3102") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3103") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "3110") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3111") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3112") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3122") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3130") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "3131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3133") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "3200") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3201") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3202") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3203") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "3210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3211") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3212") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3221") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3222") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3223") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3230") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "3231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3233") {
+                movementAccB += 1;
+            }
+            if (chart4[S] == "3301") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3302") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3310") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3313") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3320") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3321") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3323") {
+                movementAccC += 1;
+            }
+            if (chart4[S] == "3330") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3331") {
+                movementAccD += 1;
+            }
+            if (chart4[S] == "3332") {
+                movementAccD += 1;
+            }
+
             // document.getElementById("+6tick").innerHTML = " Tick " + a + " S " + S
         }
     }
@@ -6602,293 +7874,127 @@ function step(timestamp) {
         //     }, 4)
         // }
         if (chartNumber == 5) {
-            if (chart5[S] == "1000") {
-                movementAccA += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
+            if (chart5[S] == "0001") {
+                movementAccD += 1;
             }
-            if (chart5[S] == "0100") {
-                movementAccB += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
+            if (chart5[S] == "0002") {
+                movementAccD += 1;
             }
             if (chart5[S] == "0010") {
                 movementAccC += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart5[S] == "0001") {
-                movementAccD += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-            }
-            if (chart5[S] == "1100") {
-                movementAccA += 1;
-                movementAccB += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-            }
-            if (chart5[S] == "1010") {
-                movementAccA += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart5[S] == "1001") {
-                movementAccA += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-            }
-            if (chart5[S] == "0110") {
-                movementAccB += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart5[S] == "0101") {
-                movementAccB += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
             if (chart5[S] == "0011") {
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart5[S] == "1110") {
+            if (chart5[S] == "0012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0013") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0020") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0021") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0022") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
+                movementAccD += 1;
             }
-            if (chart5[S] == "1101") {
-                movementAccA += 1;
+            if (chart5[S] == "0023") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0031") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0032") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0100") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "0101") {
                 movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart5[S] == "1011") {
-                movementAccA += 1;
-                movementAccC += 1;
+            if (chart5[S] == "0102") {
+                movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
+            }
+            if (chart5[S] == "0103") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "0110") {
+                movementAccB += 1;
+                movementAccC += 1;
             }
             if (chart5[S] == "0111") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart5[S] == "1111") {
-                movementAccA += 1;
+            if (chart5[S] == "0112") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 4;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart5[S] == "2000") {
+            if (chart5[S] == "0113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0122") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0130") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "0131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0133") {
                 movementAccA += 1;
             }
             if (chart5[S] == "0200") {
                 movementAccB += 1;
             }
-            if (chart5[S] == "0020") {
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0002") {
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2200") {
-                movementAccA += 1;
+            if (chart5[S] == "0201") {
                 movementAccB += 1;
-            }
-            if (chart5[S] == "2020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "2002") {
-                movementAccA += 1;
                 movementAccD += 1;
-            }
-            if (chart5[S] == "0220") {
-                movementAccB += 1;
-                movementAccC += 1;
             }
             if (chart5[S] == "0202") {
                 movementAccB += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "0022") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "2202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "0222") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2222") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2100") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart5[S] == "2010") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "2001") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2110") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "2101") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2011") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2111") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1200") {
-                movementAccA += 1;
+            if (chart5[S] == "0203") {
                 movementAccB += 1;
             }
             if (chart5[S] == "0210") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0201") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1210") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "1201") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -6897,60 +8003,103 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "1211") {
-                movementAccA += 1;
+            if (chart5[S] == "0213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0220") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0221") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "1020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0120") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0021") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "1021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "0121") {
+            if (chart5[S] == "0222") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "1121") {
-                movementAccA += 1;
+            if (chart5[S] == "0223") {
                 movementAccB += 1;
                 movementAccC += 1;
+            }
+            if (chart5[S] == "0230") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "0231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0233") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "0301") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0302") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0310") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0313") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0320") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0321") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0323") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "0331") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "0332") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1000") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "1001") {
+                movementAccA += 1;
                 movementAccD += 1;
             }
             if (chart5[S] == "1002") {
                 movementAccA += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "0102") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "0012") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1102") {
+            if (chart5[S] == "1003") {
                 movementAccA += 1;
-                movementAccB += 1;
+            }
+            if (chart5[S] == "1010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1011") {
+                movementAccA += 1;
+                movementAccC += 1;
                 movementAccD += 1;
             }
             if (chart5[S] == "1012") {
@@ -6958,7 +8107,72 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "0112") {
+            if (chart5[S] == "1013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1030") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "1031") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1032") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1033") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1111") {
+                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -6969,300 +8183,18 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "3100") {
-                movementAccB += 1;
-            }
-            if (chart5[S] == "3010") {
-                movementAccC += 1;
-            }
-            if (chart5[S] == "3001") {
-                movementAccD += 1;
-            }
-            if (chart5[S] == "3110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "3101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "3011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "3111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1300") {
-                movementAccA += 1;
-            }
-            if (chart5[S] == "0310") {
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0301") {
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1310") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "1301") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0311") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1311") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1030") {
-                movementAccA += 1;
-            }
-            if (chart5[S] == "0130") {
-                movementAccB += 1;
-            }
-            if (chart5[S] == "0031") {
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1130") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart5[S] == "1031") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "0131") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1131") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1003") {
-                movementAccA += 1;
-            }
-            if (chart5[S] == "0103") {
-                movementAccB += 1;
-            }
-            if (chart5[S] == "0013") {
-                movementAccC += 1;
-            }
-            if (chart5[S] == "1103") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart5[S] == "1013") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0113") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
             if (chart5[S] == "1113") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (chart5[S] == "4100") {
-                movementAccB += 1;
-            }
-            if (chart5[S] == "4010") {
-                movementAccC += 1;
-            }
-            if (chart5[S] == "4001") {
-                movementAccD += 1;
-            }
-            if (chart5[S] == "4110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "4101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "4011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "4111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1400") {
-                movementAccA += 1;
-            }
-            if (chart5[S] == "0410") {
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0401") {
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1410") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "1401") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0411") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1411") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1040") {
-                movementAccA += 1;
-            }
-            if (chart5[S] == "0140") {
-                movementAccB += 1;
-            }
-            if (chart5[S] == "0041") {
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1140") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart5[S] == "1041") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "0141") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1141") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1004") {
-                movementAccA += 1;
-            }
-            if (chart5[S] == "0104") {
-                movementAccB += 1;
-            }
-            if (chart5[S] == "0014") {
-                movementAccC += 1;
-            }
-            if (chart5[S] == "1104") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart5[S] == "1014") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0114") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "1114") {
+            if (chart5[S] == "1120") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (chart5[S] == "2210") {
+            if (chart5[S] == "1121") {
                 movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "2201") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2211") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "2021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2121") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2102") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2012") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "2112") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart5[S] == "0221") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1221") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "0212") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1212") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "1022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart5[S] == "0122") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -7273,19 +8205,75 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "2221") {
+            if (chart5[S] == "1123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1130") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1211") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "2122") {
+            if (chart5[S] == "1212") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart5[S] == "2212") {
+            if (chart5[S] == "1213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1221") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
@@ -7297,6 +8285,608 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
+            if (chart5[S] == "1223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1300") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1303") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "1310") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "1311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "1333") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "2000") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "2001") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2002") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2003") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "2010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2011") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2012") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2030") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "2031") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2032") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2033") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "2100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "2101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "2110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2111") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2112") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2113") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2120") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2121") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2122") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2130") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "2200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "2201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2202") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "2210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2211") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2212") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2221") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2222") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "2231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart5[S] == "2300") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "2301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2303") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "2310") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "2330") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "2331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "2333") {
+                movementAccA += 1;
+            }
+            if (chart5[S] == "3001") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3002") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3010") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3011") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3013") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3020") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3021") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3022") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3023") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3031") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3032") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3100") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "3101") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3102") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3103") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "3110") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3111") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3112") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3122") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3130") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "3131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3133") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "3200") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3201") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3202") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3203") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "3210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3211") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3212") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3221") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3222") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3223") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3230") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "3231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3233") {
+                movementAccB += 1;
+            }
+            if (chart5[S] == "3301") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3302") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3310") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3313") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3320") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3321") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3323") {
+                movementAccC += 1;
+            }
+            if (chart5[S] == "3330") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3331") {
+                movementAccD += 1;
+            }
+            if (chart5[S] == "3332") {
+                movementAccD += 1;
+            }
+
             // document.getElementById("+6tick").innerHTML = " Tick " + a + " S " + S
         }
     }
@@ -7345,293 +8935,127 @@ function step(timestamp) {
         //     }, 4)
         // }
         if (chartNumber == 6) {
-            if (chart6[S] == "1000") {
-                movementAccA += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
+            if (chart6[S] == "0001") {
+                movementAccD += 1;
             }
-            if (chart6[S] == "0100") {
-                movementAccB += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
+            if (chart6[S] == "0002") {
+                movementAccD += 1;
             }
             if (chart6[S] == "0010") {
                 movementAccC += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart6[S] == "0001") {
-                movementAccD += 1;
-                steps += 1;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-            }
-            if (chart6[S] == "1100") {
-                movementAccA += 1;
-                movementAccB += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-            }
-            if (chart6[S] == "1010") {
-                movementAccA += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart6[S] == "1001") {
-                movementAccA += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-            }
-            if (chart6[S] == "0110") {
-                movementAccB += 1;
-                movementAccC += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-            }
-            if (chart6[S] == "0101") {
-                movementAccB += 1;
-                movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
             if (chart6[S] == "0011") {
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 2;
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart6[S] == "1110") {
+            if (chart6[S] == "0012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0013") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0020") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0021") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0022") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
+                movementAccD += 1;
             }
-            if (chart6[S] == "1101") {
-                movementAccA += 1;
+            if (chart6[S] == "0023") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0031") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0032") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0100") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "0101") {
                 movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart6[S] == "1011") {
-                movementAccA += 1;
-                movementAccC += 1;
+            if (chart6[S] == "0102") {
+                movementAccB += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
+            }
+            if (chart6[S] == "0103") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "0110") {
+                movementAccB += 1;
+                movementAccC += 1;
             }
             if (chart6[S] == "0111") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 3;
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart6[S] == "1111") {
-                movementAccA += 1;
+            if (chart6[S] == "0112") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
-                steps += 4;
-                setTimeout(function () {
-                    document.getElementById("div").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div2").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div3").style.outline = "none";
-                }, 4)
-                setTimeout(function () {
-                    document.getElementById("div4").style.outline = "none";
-                }, 4)
             }
-            if (chart6[S] == "2000") {
+            if (chart6[S] == "0113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0122") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0130") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "0131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0133") {
                 movementAccA += 1;
             }
             if (chart6[S] == "0200") {
                 movementAccB += 1;
             }
-            if (chart6[S] == "0020") {
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0002") {
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2200") {
-                movementAccA += 1;
+            if (chart6[S] == "0201") {
                 movementAccB += 1;
-            }
-            if (chart6[S] == "2020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "2002") {
-                movementAccA += 1;
                 movementAccD += 1;
-            }
-            if (chart6[S] == "0220") {
-                movementAccB += 1;
-                movementAccC += 1;
             }
             if (chart6[S] == "0202") {
                 movementAccB += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "0022") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "2202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "0222") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2222") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2100") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart6[S] == "2010") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "2001") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2110") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "2101") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2011") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2111") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1200") {
-                movementAccA += 1;
+            if (chart6[S] == "0203") {
                 movementAccB += 1;
             }
             if (chart6[S] == "0210") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0201") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1210") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "1201") {
-                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
@@ -7640,60 +9064,103 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "1211") {
-                movementAccA += 1;
+            if (chart6[S] == "0213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0220") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0221") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "1020") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0120") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0021") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "1021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "0121") {
+            if (chart6[S] == "0222") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "1121") {
-                movementAccA += 1;
+            if (chart6[S] == "0223") {
                 movementAccB += 1;
                 movementAccC += 1;
+            }
+            if (chart6[S] == "0230") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "0231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0233") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "0301") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0302") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0310") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0313") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0320") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0321") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0323") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "0331") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "0332") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1000") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "1001") {
+                movementAccA += 1;
                 movementAccD += 1;
             }
             if (chart6[S] == "1002") {
                 movementAccA += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "0102") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "0012") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1102") {
+            if (chart6[S] == "1003") {
                 movementAccA += 1;
-                movementAccB += 1;
+            }
+            if (chart6[S] == "1010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1011") {
+                movementAccA += 1;
+                movementAccC += 1;
                 movementAccD += 1;
             }
             if (chart6[S] == "1012") {
@@ -7701,7 +9168,72 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "0112") {
+            if (chart6[S] == "1013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1030") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "1031") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1032") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1033") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1111") {
+                movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -7712,300 +9244,18 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "3100") {
-                movementAccB += 1;
-            }
-            if (chart6[S] == "3010") {
-                movementAccC += 1;
-            }
-            if (chart6[S] == "3001") {
-                movementAccD += 1;
-            }
-            if (chart6[S] == "3110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "3101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "3011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "3111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1300") {
-                movementAccA += 1;
-            }
-            if (chart6[S] == "0310") {
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0301") {
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1310") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "1301") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0311") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1311") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1030") {
-                movementAccA += 1;
-            }
-            if (chart6[S] == "0130") {
-                movementAccB += 1;
-            }
-            if (chart6[S] == "0031") {
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1130") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart6[S] == "1031") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "0131") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1131") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1003") {
-                movementAccA += 1;
-            }
-            if (chart6[S] == "0103") {
-                movementAccB += 1;
-            }
-            if (chart6[S] == "0013") {
-                movementAccC += 1;
-            }
-            if (chart6[S] == "1103") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart6[S] == "1013") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0113") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
             if (chart6[S] == "1113") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (chart6[S] == "4100") {
-                movementAccB += 1;
-            }
-            if (chart6[S] == "4010") {
-                movementAccC += 1;
-            }
-            if (chart6[S] == "4001") {
-                movementAccD += 1;
-            }
-            if (chart6[S] == "4110") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "4101") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "4011") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "4111") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1400") {
-                movementAccA += 1;
-            }
-            if (chart6[S] == "0410") {
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0401") {
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1410") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "1401") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0411") {
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1411") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1040") {
-                movementAccA += 1;
-            }
-            if (chart6[S] == "0140") {
-                movementAccB += 1;
-            }
-            if (chart6[S] == "0041") {
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1140") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart6[S] == "1041") {
-                movementAccA += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "0141") {
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1141") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1004") {
-                movementAccA += 1;
-            }
-            if (chart6[S] == "0104") {
-                movementAccB += 1;
-            }
-            if (chart6[S] == "0014") {
-                movementAccC += 1;
-            }
-            if (chart6[S] == "1104") {
-                movementAccA += 1;
-                movementAccB += 1;
-            }
-            if (chart6[S] == "1014") {
-                movementAccA += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0114") {
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "1114") {
+            if (chart6[S] == "1120") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
             }
-            if (chart6[S] == "2210") {
+            if (chart6[S] == "1121") {
                 movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "2201") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2211") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2120") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "2021") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2121") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2102") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2012") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "2112") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1220") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-            }
-            if (chart6[S] == "0221") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1221") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1202") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "0212") {
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1212") {
-                movementAccA += 1;
-                movementAccB += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "1022") {
-                movementAccA += 1;
-                movementAccC += 1;
-                movementAccD += 1;
-            }
-            if (chart6[S] == "0122") {
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
@@ -8016,19 +9266,75 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "2221") {
+            if (chart6[S] == "1123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1130") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1211") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "2122") {
+            if (chart6[S] == "1212") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
                 movementAccD += 1;
             }
-            if (chart6[S] == "2212") {
+            if (chart6[S] == "1213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1221") {
                 movementAccA += 1;
                 movementAccB += 1;
                 movementAccC += 1;
@@ -8040,6 +9346,608 @@ function step(timestamp) {
                 movementAccC += 1;
                 movementAccD += 1;
             }
+            if (chart6[S] == "1223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1300") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1303") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "1310") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "1311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1330") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "1333") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "2000") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "2001") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2002") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2003") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "2010") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2011") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2012") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2013") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2020") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2021") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2022") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2023") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2030") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "2031") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2032") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2033") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "2100") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "2101") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2102") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2103") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "2110") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2111") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2112") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2113") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2120") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2121") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2122") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2123") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2130") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2131") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2132") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2133") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "2200") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "2201") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2202") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2203") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "2210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2211") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2212") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2213") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2221") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2222") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2223") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2230") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "2231") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2232") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2233") {
+                movementAccA += 1;
+                movementAccB += 1;
+            }
+            if (chart6[S] == "2300") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "2301") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2302") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2303") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "2310") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2311") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2312") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2313") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2320") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2321") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2322") {
+                movementAccA += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2323") {
+                movementAccA += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "2330") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "2331") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2332") {
+                movementAccA += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "2333") {
+                movementAccA += 1;
+            }
+            if (chart6[S] == "3001") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3002") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3010") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3011") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3012") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3013") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3020") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3021") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3022") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3023") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3031") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3032") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3100") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "3101") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3102") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3103") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "3110") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3111") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3112") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3113") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3120") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3121") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3122") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3123") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3130") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "3131") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3132") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3133") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "3200") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3201") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3202") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3203") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "3210") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3211") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3212") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3213") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3220") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3221") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3222") {
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3223") {
+                movementAccB += 1;
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3230") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "3231") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3232") {
+                movementAccB += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3233") {
+                movementAccB += 1;
+            }
+            if (chart6[S] == "3301") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3302") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3310") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3311") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3312") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3313") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3320") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3321") {
+                movementAccA += 1;
+                movementAccB += 1;
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3322") {
+                movementAccC += 1;
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3323") {
+                movementAccC += 1;
+            }
+            if (chart6[S] == "3330") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3331") {
+                movementAccD += 1;
+            }
+            if (chart6[S] == "3332") {
+                movementAccD += 1;
+            }
+
             // document.getElementById("+6tick").innerHTML = " Tick " + a + " S " + S
         }
     }
