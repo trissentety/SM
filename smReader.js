@@ -20251,7 +20251,7 @@ function rateP() {
     rate.toFixed(2);
     audio.playbackRate = rate;
     if (rate <= 0) {
-        rate = 1;
+        rate = 0.05;
         document.getElementById("span20").style.marginRight = ".8" + "em"
     }
     if (rate == 1) {
@@ -20273,7 +20273,7 @@ function rateM() {
     rate -= 0.05;
     audio.playbackRate = rate;
     if (rate <= 0) {
-        rate = 1;
+        rate = 0.05;
         document.getElementById("span20").style.marginRight = ".8" + "em"
     }
     if (rate == 1) {
