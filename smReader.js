@@ -1,5 +1,5 @@
 var sg = 0;
-var sg3 = 0; 
+var sg3 = 0;
 var firstChart = 0;
 var chartNumber = 1;
 var keySecond = 0;
