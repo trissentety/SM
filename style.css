@@ -36,7 +36,7 @@ button {
 } */
 
 input {
-    background: rgb(0, 0, 133);
+    background: rgb(255, 12, 227);
     color: rgb(173, 142, 219);
     font-size: 25px;
     cursor: pointer;
@@ -366,7 +366,7 @@ input[type="file"] {
 #search {
     position: absolute;
     top: 930px;
-    left: 61.2%;
+    left: 61%;
     visibility: hidden;
 }
 
