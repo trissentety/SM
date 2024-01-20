@@ -1,5 +1,5 @@
 body {
-   
+
     font-family: cursive;
     background: black;
     overflow: hidden;
@@ -103,8 +103,25 @@ img {
 
 }
 
+button {
+    float: right;
+    background: black;
+    color: white;
+}
+
 #button1 {
-    color: black;
+    float: right;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+select,
+#sm {
+    float: right;
+    background: black;
+    color: white;
+    cursor: pointer;
 }
 
 #barfade {
