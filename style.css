@@ -1,7 +1,7 @@
 body { 
     /* background: rgb(32, 5, 31); */  
     color: rgb(109, 109, 224);
-    overflow: hidden;
+    overflow: hidden; 
     background: #190764;
     transition: background-image 2s;
     background-image: url('bikiniBottom.png');
