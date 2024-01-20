@@ -1,4 +1,4 @@
-var sg = 0; 
+var sg = 0;
 var sg3 = 0;
 var firstChart = 0;
 var chartNumber = 1;
@@ -24969,7 +24969,7 @@ function scoresSave() {
     scoreN++
     randomPick = Math.ceil(Math.random() * 5);
 
-    scoresA.push(songTitleClean + "<br />" + artist + "<br/>" + "Chart " + chartNumber + "<br />" + "Ultimate " + ultimate + "<br />" + "Fancy " + fancy + "<br />" + "Stunning " + stunning + "<br />" + "Miss " + miss + "<br />" + date + "<br /><br />")
+    scoresA.push(songTitleClean + "<br />" + artist + "<br/>" + "Chart " + chartNumber + "<br />" + "Rate " + rate.toFixed(2) + "<br />" + "Ultimate " + ultimate + "<br />" + "Fancy " + fancy + "<br />" + "Stunning " + stunning + "<br />" + "Miss " + miss + "<br />" + date + "<br /><br />")
 
     localStorage.setItem('scores', JSON.stringify(scoresA));
 }
