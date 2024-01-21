@@ -4,7 +4,7 @@ var firstChart = 0;
 var chartNumber = 1;
 var keySecond = 0;
 var secondChart = [];
-var keyThird = 0;
+var keyThird = 0; 
 var title = "";
 var songTitleClean;
 var tickCount = 0;
