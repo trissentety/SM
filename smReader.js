@@ -1,10 +1,10 @@
-var sg = 0;  
-var sg3 = 0; 
+var sg = 0;
+var sg3 = 0;
 var firstChart = 0;
-var chartNumber = 1; 
+var chartNumber = 1;
 var keySecond = 0;
 var secondChart = [];
-var keyThird = 0; 
+var keyThird = 0;
 var title = "";
 var songTitleClean;
 var tickCount = 0;
@@ -1917,7 +1917,7 @@ async function button() {
             document.getElementById("songTitle").innerHTML = songTitleClean
             document.getElementById("songTitle").style.visibility = "visible";
         }
-        if (line.startsWith("     1") || line.startsWith("     2") || line.startsWith("     3") || line.startsWith("     4") || line.startsWith("     5") || line.startsWith("     6") || line.startsWith("     7") || line.startsWith("     8") || line.startsWith("     9")) {
+        if (line.startsWith("     1") && !line.includes(".") || line.startsWith("     2") && !line.includes(".") || line.startsWith("     3") && !line.includes(".") || line.startsWith("     4") && !line.includes(".") || line.startsWith("     5" && !line.includes(".")) || line.startsWith("     6") && !line.includes(".") || line.startsWith("     7") && !line.includes(".") || line.startsWith("     8") && !line.includes(".") || line.startsWith("     9") && !line.includes(".")) {
             difficultyCount += 1;
             if (difficultyCount == 1) {
                 difficulty1 = line;
@@ -20267,7 +20267,6 @@ function rateP() {
         document.getElementById("span20").style.marginRight = "3.14" + "em"
     }
     document.getElementById("span20").innerHTML = "Rate" + " " + rate.toFixed(2);
-    save();
 }
 function rateM() {
     rate -= 0.05;
@@ -20289,11 +20288,7 @@ function rateM() {
         document.getElementById("span20").style.marginRight = "3.14" + "em"
     }
     document.getElementById("span20").innerHTML = "Rate" + " " + rate.toFixed(2);
-    save();
 }
-
-
-
 
 function noteColorN() {
     if (noteColorV < 12)
